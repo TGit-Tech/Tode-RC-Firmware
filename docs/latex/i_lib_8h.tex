@@ -1,0 +1,59 @@
+\hypertarget{i_lib_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/i\+Lib.h File Reference}
+\label{i_lib_8h}\index{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/iLib.h@{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/iLib.h}}
+
+
+Menu-\/\+Items General Extension Library.  
+
+
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$E\+E\+P\+R\+O\+M.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_menu_name}{Menu\+Name}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{I\+T\+EM}} adds {\itshape N\+A\+ME} to \mbox{\hyperlink{class_menu_item}{Menu\+Item}} stored in either M\+EM or E\+E\+P\+R\+OM determined by Constructor. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_menu_value}{Menu\+Value}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{I\+T\+EM}} adds local {\itshape V\+A\+L\+UE} to \mbox{\hyperlink{class_menu_name}{Menu\+Name}} for \textquotesingle{}Name-\/$>$Value\textquotesingle{} Pairs Offers Number-\/\+Naming ability Offers Value Setting ability with optional Digit-\/\+Set or Incremental \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_menu_value_1_1_number_name}{Menu\+Value\+::\+Number\+Name}}
+\begin{DoxyCompactList}\small\item\em Text-\/\+Name Numbers. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_menu_e_e_value}{Menu\+E\+E\+Value}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{I\+T\+EM}} adds On-\/\+Display {\itshape Per-\/\+Digit} S\+ET feature to \mbox{\hyperlink{class_menu_value}{Menu\+Value}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{i_lib_8h_ac2b57b5220d5cce0605ab5ccb61307d7}\label{i_lib_8h_ac2b57b5220d5cce0605ab5ccb61307d7}} 
+\#define {\bfseries E\+E\+M\+A\+X\+N\+A\+M\+E\+S\+I\+ZE}~10
+\item 
+\mbox{\Hypertarget{i_lib_8h_a946c6e82df5cabf4ed5a1baaf660d093}\label{i_lib_8h_a946c6e82df5cabf4ed5a1baaf660d093}} 
+\#define {\bfseries R\+X\+V\+A\+L\+E\+X\+P\+I\+R\+E\+MS}~5000
+\item 
+\#define {\bfseries N\+S\+T\+I\+T\+LE}~28
+\item 
+\#define {\bfseries N\+S\+P\+OS}~29
+\item 
+\#define {\bfseries N\+S\+E\+X\+IT}~30
+\item 
+\#define {\bfseries N\+S\+S\+A\+VE}~31
+\item 
+\#define \mbox{\hyperlink{group___v_t_gaadc695ca9479c3d10a05aa3ce423f03d}{V\+T\+RW}}~0x01
+\begin{DoxyCompactList}\small\item\em b0000 0001 -\/ (0) Read-\/\+Only \mbox{[}default\mbox{]}, (1) Write \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___v_t_ga797b258e3509947af4d69079f3010db6}{V\+T\+D\+IG}}~0x02
+\begin{DoxyCompactList}\small\item\em b0000 001x -\/ (0) Increment \mbox{[}default\mbox{]}, (1) Digit Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___v_t_ga47ea1d39dc1001596339638089b9d2e3}{V\+T\+H\+EX}}~0x04
+\begin{DoxyCompactList}\small\item\em b0000 01xx -\/ (0) Decimal \mbox{[}default\mbox{]}, (1) Hexidecimal \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___v_t_ga2d65e42b28261c6b589f3769a287f8df}{V\+T\+B\+Y\+TE}}~0x08
+\begin{DoxyCompactList}\small\item\em b0000 1xxx -\/ (0) Integer \mbox{[}default\mbox{]}, (1) Byte Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___i_v_ga1b84cafc7a04429770f00b8aef903fdd}{I\+V\+E\+E\+N\+O\+T\+S\+ET}}~0x\+F\+F\+FF
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM compatible Not Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___i_v_gae83a30639c7a424a2860278801f464c3}{I\+V\+N\+O\+T\+S\+ET}}~0x8000
+\begin{DoxyCompactList}\small\item\em 2s Compliment -\/32,768 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___i_v_gab3b67d6dc5902119e3d9f9c9914ccf67}{I\+V\+E\+X\+P\+I\+R\+ED}}~0x8001
+\begin{DoxyCompactList}\small\item\em 2s Compliment -\/32,767 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___b_v_ga05f691f97ff1bff1e953e005b5917a16}{B\+V\+N\+O\+T\+S\+ET}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em V\+T\+B\+Y\+TE Value Not Set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Menu-\/\+Items General Extension Library. 
+
+Adds the {\itshape Set\+Name\+Tool} class. 

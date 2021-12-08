@@ -1,0 +1,183 @@
+\hypertarget{class_radio_packet}{}\doxysection{Radio\+Packet Class Reference}
+\label{class_radio_packet}\index{RadioPacket@{RadioPacket}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_radio_packet_a16ba210e7ac852f09dd85a5db708a190}\label{class_radio_packet_a16ba210e7ac852f09dd85a5db708a190}} 
+{\bfseries Radio\+Packet} (int \+\_\+\+Send\+To=0x\+F\+F\+FF, byte \+\_\+\+Channel=0x\+FF)
+\item 
+\mbox{\Hypertarget{class_radio_packet_a91ca85c270a493b276514dbe807d5d9f}\label{class_radio_packet_a91ca85c270a493b276514dbe807d5d9f}} 
+int {\bfseries To} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_a4ebf07b819b0a89536c63f42e6af77b6}\label{class_radio_packet_a4ebf07b819b0a89536c63f42e6af77b6}} 
+int {\bfseries Channel} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_aa0bc7f510460b4e717425066f20f1ef9}\label{class_radio_packet_aa0bc7f510460b4e717425066f20f1ef9}} 
+void {\bfseries Channel} (byte \+\_\+\+Channel)
+\item 
+\mbox{\Hypertarget{class_radio_packet_a8aa317d98668bc00369ebbe718de7166}\label{class_radio_packet_a8aa317d98668bc00369ebbe718de7166}} 
+void {\bfseries Value} (byte \+\_\+\+Index, int \+\_\+\+Value)
+\item 
+\mbox{\Hypertarget{class_radio_packet_ad836ff2ca9715acfc46262e823195c4e}\label{class_radio_packet_ad836ff2ca9715acfc46262e823195c4e}} 
+int {\bfseries Value} (byte \+\_\+\+Index)
+\item 
+\mbox{\Hypertarget{class_radio_packet_a78e80cf94cab2ca50e4fb43f29045244}\label{class_radio_packet_a78e80cf94cab2ca50e4fb43f29045244}} 
+byte {\bfseries Version} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_a20b192c756d1a94e62e62153da7294c4}\label{class_radio_packet_a20b192c756d1a94e62e62153da7294c4}} 
+void {\bfseries Version} (byte \+\_\+\+Ver)
+\item 
+\mbox{\Hypertarget{class_radio_packet_a52e7ee93ed7a8277c8cf76f96a7ef686}\label{class_radio_packet_a52e7ee93ed7a8277c8cf76f96a7ef686}} 
+byte {\bfseries Packet\+Type} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_a8cf5f71190f7ae29aaf97ba0660cb069}\label{class_radio_packet_a8cf5f71190f7ae29aaf97ba0660cb069}} 
+void {\bfseries Packet\+Type} (byte \+\_\+\+P\+KT)
+\item 
+\mbox{\Hypertarget{class_radio_packet_a7a1dca298becebd25bb9392abef5122c}\label{class_radio_packet_a7a1dca298becebd25bb9392abef5122c}} 
+int {\bfseries From} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_ad7d70e8e6024d0553a78e16332af7c4a}\label{class_radio_packet_ad7d70e8e6024d0553a78e16332af7c4a}} 
+void {\bfseries From} (int \+\_\+\+From)
+\item 
+\mbox{\Hypertarget{class_radio_packet_ac1120cf1b2fbc813970d2e177d6ca28f}\label{class_radio_packet_ac1120cf1b2fbc813970d2e177d6ca28f}} 
+bool {\bfseries Is\+Complete} ()
+\item 
+\mbox{\Hypertarget{class_radio_packet_acbec7c6a8f9c30d080dd71bfcc9f88af}\label{class_radio_packet_acbec7c6a8f9c30d080dd71bfcc9f88af}} 
+bool {\bfseries New\+Byte} (byte \+\_\+B)
+\item 
+bool \mbox{\hyperlink{class_radio_packet_a0cb2a774bbb0b40bd3a7f3306ebf3336}{Secure}} (byte \+\_\+\+Sec\+Net)
+\begin{DoxyCompactList}\small\item\em Secures and Verifies the send packet data just before sending to RF \mbox{\hyperlink{class_radio}{Radio}}. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_radio_packet_a05f395e17fc6d73bdca78a55bee82e14}{Security\+Check}} (byte \+\_\+\+Sec\+Net, byte z, byte o)
+\begin{DoxyCompactList}\small\item\em Verifies the Security of a receiving packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_radio_packet_a459fd3a81a3f14581a1790a0aba5ee4d}\label{class_radio_packet_a459fd3a81a3f14581a1790a0aba5ee4d}} 
+byte {\bfseries Size} = 0
+\item 
+\mbox{\Hypertarget{class_radio_packet_ac197d400ad1c5ef40c349524d150582a}\label{class_radio_packet_ac197d400ad1c5ef40c349524d150582a}} 
+byte {\bfseries Next\+Idx} = 0
+\item 
+byte {\bfseries Bytes} \mbox{[}58\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 59 of file Radio.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_radio_packet_a0cb2a774bbb0b40bd3a7f3306ebf3336}\label{class_radio_packet_a0cb2a774bbb0b40bd3a7f3306ebf3336}} 
+\index{RadioPacket@{RadioPacket}!Secure@{Secure}}
+\index{Secure@{Secure}!RadioPacket@{RadioPacket}}
+\doxysubsubsection{\texorpdfstring{Secure()}{Secure()}}
+{\footnotesize\ttfamily bool Radio\+Packet\+::\+Secure (\begin{DoxyParamCaption}\item[{byte}]{\+\_\+\+Sec\+Net }\end{DoxyParamCaption})}
+
+
+
+Secures and Verifies the send packet data just before sending to RF \mbox{\hyperlink{class_radio}{Radio}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Sec\+Net} & -\/ User Setting for \textquotesingle{}Sec\+Net\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of Bytes in Packet {\bfseries{Example\+:}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{XBee.digitalWriteB(3,HIGH);}
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Radio.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                     \{}
+\DoxyCodeLine{39   \textcolor{keywordflow}{if} ( PacketType() == PKT\_NOTSET ) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{40   \textcolor{keywordtype}{int} SecNet = 0xFFFF;}
+\DoxyCodeLine{41   \textcolor{keywordtype}{int} i = 0; \textcolor{keywordtype}{int} y = 0;}
+\DoxyCodeLine{42   \textcolor{keywordflow}{while} ( i<16 ) \{}
+\DoxyCodeLine{43     bitWrite(SecNet,i,bitRead(\_SecNet,y));i++;}
+\DoxyCodeLine{44     bitWrite(SecNet,i,bitRead(NextIdx,y));i++;y++;}
+\DoxyCodeLine{45   \}}
+\DoxyCodeLine{46   Bytes[3] = highByte(SecNet);}
+\DoxyCodeLine{47   Bytes[4] = lowByte(SecNet);}
+\DoxyCodeLine{48   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_radio_packet_a05f395e17fc6d73bdca78a55bee82e14}\label{class_radio_packet_a05f395e17fc6d73bdca78a55bee82e14}} 
+\index{RadioPacket@{RadioPacket}!SecurityCheck@{SecurityCheck}}
+\index{SecurityCheck@{SecurityCheck}!RadioPacket@{RadioPacket}}
+\doxysubsubsection{\texorpdfstring{SecurityCheck()}{SecurityCheck()}}
+{\footnotesize\ttfamily byte Radio\+Packet\+::\+Security\+Check (\begin{DoxyParamCaption}\item[{byte}]{\+\_\+\+Sec\+Net,  }\item[{byte}]{z,  }\item[{byte}]{o }\end{DoxyParamCaption})}
+
+
+
+Verifies the Security of a receiving packet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Sec\+Net} & -\/ User Setting for \textquotesingle{}Sec\+Net\textquotesingle{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em z} & -\/ Byte\mbox{[}0\mbox{]} of receiving bytes \\
+\hline
+\mbox{\texttt{ in}}  & {\em o} & -\/ Byte\mbox{[}1\mbox{]} of receiving bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of Bytes in Packet ( If not secure Packet Size = 0 ) {\bfseries{Example\+:}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{XBee.digitalWriteB(3,HIGH);}
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Radio.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                             \{}
+\DoxyCodeLine{52   Size = word(z,0) \& 0xAAAA;}
+\DoxyCodeLine{53   \textcolor{keywordflow}{if} ( Size > 58 ) Size=0;}
+\DoxyCodeLine{54   \textcolor{keywordflow}{if} ( word(z,0) \& 0x5555 != \_SecNet ) Size=0;}
+\DoxyCodeLine{55   \textcolor{keywordflow}{return} Size;}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_radio_packet_ae13aaaa0bf1ac7502ab7c9acdd89ac57}\label{class_radio_packet_ae13aaaa0bf1ac7502ab7c9acdd89ac57}} 
+\index{RadioPacket@{RadioPacket}!Bytes@{Bytes}}
+\index{Bytes@{Bytes}!RadioPacket@{RadioPacket}}
+\doxysubsubsection{\texorpdfstring{Bytes}{Bytes}}
+{\footnotesize\ttfamily byte Radio\+Packet\+::\+Bytes\mbox{[}58\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255\}}
+
+\end{DoxyCode}
+
+
+Definition at line 80 of file Radio.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/\#\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+E32-\/20\+C9/\mbox{\hyperlink{_radio_8h}{Radio.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/\#\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+E32-\/20\+C9/Radio.\+cpp\end{DoxyCompactItemize}

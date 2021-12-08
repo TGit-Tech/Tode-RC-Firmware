@@ -1,0 +1,49 @@
+\hypertarget{_tode_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/\#Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+E32-\/20\+C9/\+Tode.h File Reference}
+\label{_tode_8h}\index{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/Tode.h@{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/Tode.h}}
+
+
+\mbox{\hyperlink{class_tode}{Tode}} Class.  
+
+
+{\ttfamily \#include \char`\"{}Const.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dev.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_tode}{Tode}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{L\+I\+ST}} of Devices per \mbox{\hyperlink{class_tode}{Tode}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_tode}{Tode}} Class. 
+
+
+\begin{DoxyPre}
+Two different types of \mbox{\hyperlink{class_tode}{Tode}} will exist.
+\begin{DoxyItemize}
+\item ThisTode
+ EEPROM Configuration with accessable Remote Control at 0x0000
+ \mbox{\hyperlink{class_device}{Device}} Settings like IO-\/Pin stored in LOCAL SYSTEM SETTING EEPROM space. (Not Control Space)
+ All \mbox{\hyperlink{class_device}{Device}} Item Values will be gotten from HW-\/Control.  Those Values will need RF-\/requested
+\item Remote Todes
+ All Value SET/GET will be acheived through RF requests
+
+ System Settings will be saved at the tail of EEPROM space.
+ ThisTode will be the first \mbox{\hyperlink{class_tode}{Tode}} at the start of EEPROM space.
+ Subsequent Remote \mbox{\hyperlink{class_tode}{Tode}} configuration will be stored after ThisTode from start.
+ We will no longer use Tode-\/UID but instead use RF-\/Addr + 15 Arduino ID from Peer.
+ Pinging will occur on FFFF but be filtered by the 1-\/nibble Arduino ID.
+
+ \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]
+\begin{DoxyItemize}
+\item AddDevice( with Multi-\/List of Controls ) and AddControl ( One Control )
+
+\end{DoxyItemize}\end{DoxyRefDesc}
+\begin{DoxyAuthor}{Authors}
+
+   2019-\/12-\/16  TGit-\/Tech   Origin
+
+\end{DoxyAuthor}
+
+\end{DoxyItemize}\end{DoxyPre}

@@ -1,0 +1,89 @@
+\hypertarget{class_device}{}\doxysection{Device Class Reference}
+\label{class_device}\index{Device@{Device}}
+
+
+{\bfseries{I\+T\+EM}} for Remote and/or Local Values  
+
+
+
+
+{\ttfamily \#include $<$i\+Hdw.\+h$>$}
+
+Inheritance diagram for Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_device_ad266a000057b88d7f9ec2463588ea48b}\label{class_device_ad266a000057b88d7f9ec2463588ea48b}} 
+{\bfseries Device} (const char $\ast$\+\_\+\+C\+Name, byte \+\_\+\+R\+F\+ID, byte \+\_\+\+Value\+Type=0, byte \+\_\+\+Tode\+Index=0)
+\item 
+\mbox{\Hypertarget{class_device_a50ed0bd57436b093aea881bcce472678}\label{class_device_a50ed0bd57436b093aea881bcce472678}} 
+{\bfseries Device} (int \+\_\+\+E\+E\+Name\+Address, bool \+\_\+\+Name\+Settable, byte \+\_\+\+R\+F\+ID, byte \+\_\+\+Value\+Type=0, byte \+\_\+\+Tode\+Index=0)
+\item 
+\mbox{\Hypertarget{class_device_afb89cfe70291e05708ddccea687128aa}\label{class_device_afb89cfe70291e05708ddccea687128aa}} 
+{\bfseries Device} (byte \+\_\+\+Tode\+Index, byte \+\_\+\+R\+F\+ID)
+\item 
+\mbox{\Hypertarget{class_device_ae9247aabbdfa31e5f27671e632b5377c}\label{class_device_ae9247aabbdfa31e5f27671e632b5377c}} 
+virtual int \mbox{\hyperlink{class_device_ae9247aabbdfa31e5f27671e632b5377c}{Value}} () override
+\begin{DoxyCompactList}\small\item\em G\+ET Item Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_device_a1296d5bfe8aaf88f3bfca40da505b661}\label{class_device_a1296d5bfe8aaf88f3bfca40da505b661}} 
+virtual void \mbox{\hyperlink{class_device_a1296d5bfe8aaf88f3bfca40da505b661}{Value}} (int \+\_\+\+Value, byte \+\_\+\+Status=\mbox{\hyperlink{group___s_t_s_ga23d8dde05ba79d9933910cb21f689409}{S\+T\+S\+N\+O\+R\+M\+AL}}) override
+\begin{DoxyCompactList}\small\item\em S\+ET Item Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_device_a92ccabc059d6fa93fc31f8561b08a4fa}\label{class_device_a92ccabc059d6fa93fc31f8561b08a4fa}} 
+virtual int {\bfseries I\+O\+Value} ()
+\item 
+\mbox{\Hypertarget{class_device_a7431d34dadfcd3e18b12d0a42012e541}\label{class_device_a7431d34dadfcd3e18b12d0a42012e541}} 
+virtual void {\bfseries I\+O\+Value} (int \+\_\+\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_device_a5a47bd5bbfd43a700ad2d954b80c10bb}\label{class_device_a5a47bd5bbfd43a700ad2d954b80c10bb}} 
+bool {\bfseries Is\+Local} =false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_device_a6dee16cf2288e8c12484f3e45c353095}\label{class_device_a6dee16cf2288e8c12484f3e45c353095}} 
+unsigned long \mbox{\hyperlink{class_device_a6dee16cf2288e8c12484f3e45c353095}{Rx\+Value\+Time}} =0
+\begin{DoxyCompactList}\small\item\em Value Rx Time ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_device_ac30f52cd3d616241e53ce255cf255210}\label{class_device_ac30f52cd3d616241e53ce255cf255210}} 
+unsigned int {\bfseries R\+F\+Tode\+Address} = \mbox{\hyperlink{_r_f_c_8h_aff5dcc280bf801e02fef48f71f2a3af0}{I\+N\+O\+NE}}
+\item 
+\mbox{\Hypertarget{class_device_a931ce6a5b8c94a34bc0d0faad87e030c}\label{class_device_a931ce6a5b8c94a34bc0d0faad87e030c}} 
+int {\bfseries E\+E\+Tode\+Address} = \mbox{\hyperlink{_r_f_c_8h_aff5dcc280bf801e02fef48f71f2a3af0}{I\+N\+O\+NE}}
+\item 
+\mbox{\Hypertarget{class_device_a927955c7fd5c33e1558f4ed8ad00fe4b}\label{class_device_a927955c7fd5c33e1558f4ed8ad00fe4b}} 
+int {\bfseries E\+E\+Dev\+Address} = \mbox{\hyperlink{_r_f_c_8h_aff5dcc280bf801e02fef48f71f2a3af0}{I\+N\+O\+NE}}
+\item 
+\mbox{\Hypertarget{class_device_a6ef1511e824b89bec3a4f649e7a31ae9}\label{class_device_a6ef1511e824b89bec3a4f649e7a31ae9}} 
+byte {\bfseries Dev\+Index} = \mbox{\hyperlink{_r_f_c_8h_a2750a00190636997d66cf567af774f97}{B\+N\+O\+NE}}
+\item 
+\mbox{\Hypertarget{class_device_a2b12c2df59bc1bcfedbec3d889281391}\label{class_device_a2b12c2df59bc1bcfedbec3d889281391}} 
+byte {\bfseries Tode\+Index} = \mbox{\hyperlink{_r_f_c_8h_a2750a00190636997d66cf567af774f97}{B\+N\+O\+NE}}
+\item 
+\mbox{\Hypertarget{class_device_afb04bc5f5c84c3bb1bede50bdab0f2c0}\label{class_device_afb04bc5f5c84c3bb1bede50bdab0f2c0}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Settings} = 0
+\item 
+\mbox{\Hypertarget{class_device_a9d9fbcd3aa145d4c29ce2ac792dd8090}\label{class_device_a9d9fbcd3aa145d4c29ce2ac792dd8090}} 
+\mbox{\hyperlink{class_menu_value}{Menu\+Value}} $\ast$ {\bfseries I\+O\+Pin} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{I\+T\+EM}} for Remote and/or Local Values 
+
+Definition at line 80 of file i\+Hdw.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{i_hdw_8h}{i\+Hdw.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{i_hdw_8cpp}{i\+Hdw.\+cpp}}\end{DoxyCompactItemize}

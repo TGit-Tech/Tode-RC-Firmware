@@ -1,0 +1,102 @@
+\hypertarget{class_menu_list}{}\doxysection{Menu\+List Class Reference}
+\label{class_menu_list}\index{MenuList@{MenuList}}
+
+
+{\bfseries{L\+I\+ST}} of Menu-\/\+Item (s) which can have a \mbox{\hyperlink{class_menu_list_ac14ecf727b009c14b8fc584560f384da}{Title()}} name.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Menu\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_list_a7f45754baebab8080dd0a4bbf075d7e3}\label{class_menu_list_a7f45754baebab8080dd0a4bbf075d7e3}} 
+\mbox{\hyperlink{class_menu_list_a7f45754baebab8080dd0a4bbf075d7e3}{Menu\+List}} (const char $\ast$\+\_\+\+C\+Title=0)
+\begin{DoxyCompactList}\small\item\em N\+EW List optional Title Name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a89cba35cb735956d275b2cbcc4d490cd}\label{class_menu_list_a89cba35cb735956d275b2cbcc4d490cd}} 
+virtual byte \mbox{\hyperlink{class_menu_list_a89cba35cb735956d275b2cbcc4d490cd}{Navigate}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em Keypad Navigate by K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a37307c04c7da2cc9c181184366fb1dc9}\label{class_menu_list_a37307c04c7da2cc9c181184366fb1dc9}} 
+virtual void \mbox{\hyperlink{class_menu_list_a37307c04c7da2cc9c181184366fb1dc9}{Disp\+List}} (bool Clear=false, byte \+\_\+\+X\+Pos=0, byte \+\_\+\+Y\+Pos=0)
+\begin{DoxyCompactList}\small\item\em Diplay the List on the Display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a579180d8fb5c4cf2a4e988d680dbb6f7}\label{class_menu_list_a579180d8fb5c4cf2a4e988d680dbb6f7}} 
+virtual void \mbox{\hyperlink{class_menu_list_a579180d8fb5c4cf2a4e988d680dbb6f7}{Off\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Remove List from the Display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a2d088285e715923069ead8e0c5a54d78}\label{class_menu_list_a2d088285e715923069ead8e0c5a54d78}} 
+virtual \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ \mbox{\hyperlink{class_menu_list_a2d088285e715923069ead8e0c5a54d78}{Add}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$\+\_\+\+Item)
+\begin{DoxyCompactList}\small\item\em A\+DD \mbox{\hyperlink{class_menu_item}{Menu\+Item}} to the \mbox{\hyperlink{class_menu_list}{Menu\+List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a2cca626cbd7a5c1b9167af44c334010c}\label{class_menu_list_a2cca626cbd7a5c1b9167af44c334010c}} 
+virtual void \mbox{\hyperlink{class_menu_list_a2cca626cbd7a5c1b9167af44c334010c}{Del}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$\+\_\+\+Item)
+\begin{DoxyCompactList}\small\item\em D\+EL \mbox{\hyperlink{class_menu_item}{Menu\+Item}} from the \mbox{\hyperlink{class_menu_list}{Menu\+List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_ae0bba7f87fa41f70ce2d11a9f8f7c629}\label{class_menu_list_ae0bba7f87fa41f70ce2d11a9f8f7c629}} 
+virtual void \mbox{\hyperlink{class_menu_list_ae0bba7f87fa41f70ce2d11a9f8f7c629}{Del\+All\+Items}} ()
+\begin{DoxyCompactList}\small\item\em D\+EL A\+LL Menu\+Items from the \mbox{\hyperlink{class_menu_list}{Menu\+List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_a7b91de670e0cdc42348b574a8a51a5a8}\label{class_menu_list_a7b91de670e0cdc42348b574a8a51a5a8}} 
+virtual void \mbox{\hyperlink{class_menu_list_a7b91de670e0cdc42348b574a8a51a5a8}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Preform updates on Current List. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_aca1747bceb5bf14f233ae128a1437e8c}\label{class_menu_list_aca1747bceb5bf14f233ae128a1437e8c}} 
+virtual byte \mbox{\hyperlink{class_menu_list_aca1747bceb5bf14f233ae128a1437e8c}{Loop}} ()
+\begin{DoxyCompactList}\small\item\em System loop() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_list_ac14ecf727b009c14b8fc584560f384da}\label{class_menu_list_ac14ecf727b009c14b8fc584560f384da}} 
+virtual const char $\ast$ \mbox{\hyperlink{class_menu_list_ac14ecf727b009c14b8fc584560f384da}{Title}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET List Title-\/\+Name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_list_aee6e82442ea3ddf1b2702413b1949103}\label{class_menu_list_aee6e82442ea3ddf1b2702413b1949103}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Next\+List} = 0
+\item 
+\mbox{\Hypertarget{class_menu_list_a265a8e2b6d1008bd7962f636b30c41b9}\label{class_menu_list_a265a8e2b6d1008bd7962f636b30c41b9}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Prev\+List} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_list_a1e44fd3a455fdd96c764fc78da41fde6}\label{class_menu_list_a1e44fd3a455fdd96c764fc78da41fde6}} 
+R\+F\+C\+L\+A\+SS $\ast$ {\bfseries RF} = 0
+\item 
+\mbox{\Hypertarget{class_menu_list_a3d375f4bb212075a6820f62b9711a9a7}\label{class_menu_list_a3d375f4bb212075a6820f62b9711a9a7}} 
+D\+S\+P\+C\+L\+A\+SS $\ast$ {\bfseries Display} = 0
+\item 
+\mbox{\Hypertarget{class_menu_list_ad384023d01d08886e1db8d3b1fbedb59}\label{class_menu_list_ad384023d01d08886e1db8d3b1fbedb59}} 
+byte {\bfseries X\+Pos} =0
+\item 
+\mbox{\Hypertarget{class_menu_list_a703b232b32f542675436334be8660ca9}\label{class_menu_list_a703b232b32f542675436334be8660ca9}} 
+byte {\bfseries Y\+Pos} =0
+\item 
+\mbox{\Hypertarget{class_menu_list_abb4c6d40e4ac35561021cc533d6b2283}\label{class_menu_list_abb4c6d40e4ac35561021cc533d6b2283}} 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ {\bfseries First\+Item} = 0
+\item 
+\mbox{\Hypertarget{class_menu_list_a7dc15702ef0c90d9a57d862ff0d0ed90}\label{class_menu_list_a7dc15702ef0c90d9a57d862ff0d0ed90}} 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ {\bfseries Last\+Item} = 0
+\item 
+\mbox{\Hypertarget{class_menu_list_aa6b013621b7b33231a9d7bed44a5f119}\label{class_menu_list_aa6b013621b7b33231a9d7bed44a5f119}} 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ {\bfseries Curr\+Item} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_list_a1c39e2e7a194cc6a61b868bc08f8b3c8}\label{class_menu_list_a1c39e2e7a194cc6a61b868bc08f8b3c8}} 
+class {\bfseries Navigator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{L\+I\+ST}} of Menu-\/\+Item (s) which can have a \mbox{\hyperlink{class_menu_list_ac14ecf727b009c14b8fc584560f384da}{Title()}} name. 
+
+Definition at line 125 of file Menu.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

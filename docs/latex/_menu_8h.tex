@@ -1,0 +1,92 @@
+\hypertarget{_menu_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\+Menu.h File Reference}
+\label{_menu_8h}\index{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/Menu.h@{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/Menu.h}}
+
+
+Abstract Base Classes for Menu Structure hierarchy.  
+
+
+{\ttfamily \#include \char`\"{}lib/\+A\+B\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Disp.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$E\+E\+P\+R\+O\+M.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}E32.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_menu_item}{Menu\+Item}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{I\+T\+EM}} Menu-\/\+Item Base Class ie {\itshape Interface}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_menu_list}{Menu\+List}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{L\+I\+ST}} of Menu-\/\+Item (s) which can have a \mbox{\hyperlink{class_menu_list_ac14ecf727b009c14b8fc584560f384da}{Title()}} name. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_navigator}{Navigator}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{L\+I\+ST of L\+I\+S\+TS}} Top-\/\+Level \mbox{\hyperlink{class_navigator}{Navigator}} of multiple \mbox{\hyperlink{class_menu_list}{Menu\+List}} (s). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+N\+O\+NE}~0x\+FF
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+R\+I\+G\+HT}~0x\+FE
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+L\+E\+FT}~0x\+FD
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+UP}~0x\+FC
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+D\+O\+WN}~0x\+FB
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+S\+ET}~0x\+FA
+\item 
+\#define {\bfseries N\+A\+V\+K\+E\+Y\+O\+K\+AY}~0x\+F9
+\item 
+\#define \mbox{\hyperlink{group___n_a_v_d_s_p_ga83842e70cdc79f16aeadb19a32be443e}{N\+A\+V\+D\+S\+P\+N\+E\+W\+L\+I\+ST}}~0x\+DF
+\begin{DoxyCompactList}\small\item\em \mbox{[}C\mbox{]}lear \& Show \mbox{\hyperlink{class_menu_list}{Menu\+List}} on Display \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___n_a_v_d_s_p_ga8524242115e2492e762327ce1dbe3d9e}{N\+A\+V\+D\+S\+P\+L\+I\+ST}}~0x\+DE
+\begin{DoxyCompactList}\small\item\em Show \mbox{\hyperlink{class_menu_list}{Menu\+List}} on Display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___n_a_v_d_s_p_ga77431014a18b1c6bfc185736aa4b1c53}{N\+A\+V\+D\+S\+P\+N\+E\+W\+N\+A\+M\+E\+S\+ET}}~0x\+DD
+\begin{DoxyCompactList}\small\item\em \mbox{[}C\mbox{]}lear \& Show the Name\mbox{[}S\+ET\mbox{]}Tool on Display \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___n_a_v_d_s_p_gab14ab5bf514a5b3b4f70aeef58f1dd9f}{N\+A\+V\+D\+S\+P\+N\+A\+M\+E\+S\+ET}}~0x\+DC
+\begin{DoxyCompactList}\small\item\em Show the Name\mbox{[}S\+ET\mbox{]}Tool on Display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___n_a_v_d_s_p_ga1191596b5a77711790078b2accc5f76d}{N\+A\+V\+D\+S\+P\+R\+OW}}~0x\+DB
+\begin{DoxyCompactList}\small\item\em Show a single List-\/\+Row on the Display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___n_a_v_c_m_d_ga4e07108718be71b022c7b5f5f56d444b}{N\+A\+V\+G\+O\+T\+O\+S\+U\+B\+L\+I\+ST}}~0x\+CF
+\begin{DoxyCompactList}\small\item\em Activated in Nav\+Name() of \mbox{\hyperlink{class_menu_name}{Menu\+Name}}. \end{DoxyCompactList}\item 
+\#define {\bfseries N\+A\+V\+E\+X\+I\+T\+N\+A\+M\+E\+S\+ET}~0x\+CE
+\item 
+\#define {\bfseries N\+A\+V\+S\+A\+V\+E\+N\+A\+M\+E\+S\+ET}~0x\+CD
+\item 
+\#define {\bfseries N\+A\+V\+D\+E\+L\+T\+O\+DE}~0x\+CB
+\item 
+\#define \mbox{\hyperlink{group___s_e_l_ga09d444abc77ba9f4bf20f632cd585918}{S\+E\+L\+\_\+\+N\+O\+NE}}~0
+\begin{DoxyCompactList}\small\item\em The Item is N\+OT Nav\+Selected in a List. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_e_l_gabde5a25ea1b8ea79966aa26076570f50}{S\+E\+L\+\_\+\+N\+A\+ME}}~1
+\begin{DoxyCompactList}\small\item\em N\+A\+ME element is Nav\+Selected in a List. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_e_l_ga7858360e4d39acde55490512403b74fe}{S\+E\+L\+\_\+\+V\+A\+L\+UE}}~2
+\begin{DoxyCompactList}\small\item\em V\+A\+L\+UE element is Nav\+Selected in a List. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_e_l_ga4bfc3486ef0e60b064f52a90d418aaf6}{S\+E\+L\+\_\+\+S\+E\+T\+N\+A\+ME}}~3
+\begin{DoxyCompactList}\small\item\em The N\+A\+ME element is being Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_e_l_gabe3c47742058f3738bde0b4409cea130}{S\+E\+L\+\_\+\+S\+E\+T\+V\+A\+L\+UE}}~4
+\begin{DoxyCompactList}\small\item\em The V\+A\+L\+UE element is being Set in a List. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_ga969df0b3c458ceb15a081ebbe2877bb3}{S\+T\+S\+N\+E\+V\+E\+R\+S\+ET}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em Value hasn\textquotesingle{}t been set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_ga23d8dde05ba79d9933910cb21f689409}{S\+T\+S\+N\+O\+R\+M\+AL}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em N/A Setting. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_gab7f18635c091b6c90c729e0ae03ad7ab}{S\+T\+S\+U\+S\+E\+R\+S\+ET}}~0x\+FD
+\begin{DoxyCompactList}\small\item\em User-\/\+Set Value. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_gae9e88f6fd63720e4f539d1aca3eec8e0}{S\+T\+S\+E\+X\+P\+I\+R\+ED}}~0x\+FD
+\begin{DoxyCompactList}\small\item\em Value is time-\/expired (RF G\+OT too long ago) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_gaac94067258a194325c689b5637d992a2}{S\+T\+S\+E\+E\+G\+OT}}~0x\+FC
+\begin{DoxyCompactList}\small\item\em Value was set from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_ga182ea275a7550d988eb27489fdc7977b}{S\+T\+S\+R\+F\+G\+E\+T\+T\+I\+NG}}~0x\+FB
+\begin{DoxyCompactList}\small\item\em A request for the value was sent by RF. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_ga5d327a9567a72fb0cf54dac1809d80f8}{S\+T\+S\+R\+F\+S\+ET}}~0x\+FA
+\begin{DoxyCompactList}\small\item\em An RF Rx Packet requests a Value-\/\+Set. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_t_s_gacadf84d010e26adebf068fb8d9ab63a6}{S\+T\+S\+R\+F\+G\+OT}}~0x\+F9
+\begin{DoxyCompactList}\small\item\em RF Rx Packet contains new Value to be Set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract Base Classes for Menu Structure hierarchy. 
+
+
+\begin{DoxyItemize}
+\item Top-\/\+Level \mbox{\hyperlink{class_navigator}{Navigator}} of \mbox{\hyperlink{class_menu_list}{Menu\+List}} (s)
+\item \mbox{\hyperlink{class_menu_list}{Menu\+List}} of \mbox{\hyperlink{class_menu_item}{Menu\+Item}} (s)
+\item \mbox{\hyperlink{class_menu_item}{Menu\+Item}} 
+\end{DoxyItemize}

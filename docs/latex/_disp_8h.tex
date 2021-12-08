@@ -1,0 +1,103 @@
+\hypertarget{_disp_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\+Disp.h File Reference}
+\label{_disp_8h}\index{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/Disp.h@{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/Disp.h}}
+
+
+Itemize various Display differences Custom Fonts -\/ \href{https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts}{\texttt{ https\+://learn.\+adafruit.\+com/adafruit-\/gfx-\/graphics-\/library/using-\/fonts}}.  
+
+
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\newline
+{\ttfamily \#include $<$Adafruit\+\_\+\+G\+F\+X.\+h$>$}\newline
+{\ttfamily \#include $<$Adafruit\+\_\+\+S\+T7735.\+h$>$}\newline
+{\ttfamily \#include $<$One\+Slot9pt7b.\+h$>$}\newline
+{\ttfamily \#include $<$Droid\+Sans\+Mono9pt7b.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_disp_8h_af918b7e03a67700fb129d3fa0d7fa788}\label{_disp_8h_af918b7e03a67700fb129d3fa0d7fa788}} 
+\#define {\bfseries D\+S\+P\+C\+L\+A\+SS}~Adafruit\+\_\+\+S\+T7735
+\item 
+\#define {\bfseries B\+L\+A\+CK}~0x0000
+\item 
+\#define {\bfseries N\+A\+VY}~0x000F
+\item 
+\#define {\bfseries D\+A\+R\+K\+G\+R\+E\+EN}~0x03\+E0
+\item 
+\#define {\bfseries D\+A\+R\+K\+C\+Y\+AN}~0x03\+EF
+\item 
+\#define {\bfseries M\+A\+R\+O\+ON}~0x7800
+\item 
+\#define {\bfseries P\+U\+R\+P\+LE}~0x780F
+\item 
+\#define {\bfseries O\+L\+I\+VE}~0x7\+B\+E0
+\item 
+\#define {\bfseries L\+I\+G\+H\+T\+G\+R\+EY}~0x\+C618
+\item 
+\#define {\bfseries D\+A\+R\+K\+G\+R\+EY}~0x7\+B\+EF
+\item 
+\#define {\bfseries B\+L\+UE}~0x001F
+\item 
+\#define {\bfseries G\+R\+E\+EN}~0x07\+E0
+\item 
+\#define {\bfseries C\+Y\+AN}~0x07\+FF
+\item 
+\#define {\bfseries R\+ED}~0x\+F800
+\item 
+\#define {\bfseries M\+A\+G\+E\+N\+TA}~0x\+F81F
+\item 
+\#define {\bfseries Y\+E\+L\+L\+OW}~0x\+F\+F\+E0
+\item 
+\#define {\bfseries W\+H\+I\+TE}~0x\+F\+F\+FF
+\item 
+\#define {\bfseries O\+R\+A\+N\+GE}~0x\+F\+D20
+\item 
+\#define {\bfseries G\+R\+E\+E\+N\+Y\+E\+L\+L\+OW}~0x\+A\+F\+E5
+\item 
+\#define {\bfseries P\+I\+NK}~0x\+F81F
+\item 
+\#define {\bfseries V\+A\+L\+C\+OL}~80
+\item 
+\#define {\bfseries S\+C\+R\+E\+E\+N\+W\+I\+D\+TH}~128
+\item 
+\#define {\bfseries S\+C\+R\+E\+E\+N\+H\+E\+I\+G\+HT}~160
+\item 
+\#define {\bfseries I\+T\+E\+M\+C\+H\+A\+R\+W\+I\+D\+TH}~7
+\item 
+\#define {\bfseries I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT}~14
+\item 
+\#define {\bfseries T\+I\+T\+L\+E\+C\+H\+A\+R\+H\+E\+I\+G\+HT}~13
+\item 
+\#define {\bfseries T\+I\+T\+L\+E\+C\+H\+A\+R\+W\+I\+D\+TH}~11
+\item 
+\#define {\bfseries D\+S\+P\+\_\+\+B\+E\+G\+IN}~initR(I\+N\+I\+T\+R\+\_\+\+B\+L\+A\+C\+K\+T\+AB)
+\item 
+\#define {\bfseries D\+S\+P\+\_\+\+S\+E\+T\+R\+O\+T\+A\+T\+I\+ON}~set\+Rotation(2)
+\item 
+\#define {\bfseries C\+L\+E\+A\+R\+S\+C\+R\+E\+EN}~fill\+Screen(0x0000)
+\item 
+\#define {\bfseries T\+I\+T\+L\+E\+F\+O\+NT}~set\+Font(\&Droid\+Sans\+Mono9pt7b)
+\item 
+\#define {\bfseries I\+T\+E\+M\+F\+O\+NT}~set\+Font(\&One\+Slot9pt7b)
+\item 
+\#define {\bfseries S\+E\+T\+C\+U\+R\+S\+OR}~set\+Cursor
+\item 
+\#define {\bfseries T\+X\+T\+N\+O\+RM}~set\+Text\+Color(W\+H\+I\+TE)
+\item 
+\#define {\bfseries T\+X\+T\+S\+E\+LT}~set\+Text\+Color(Y\+E\+L\+L\+OW)
+\item 
+\#define {\bfseries T\+X\+T\+S\+ET}~set\+Text\+Color(M\+A\+R\+O\+ON)
+\item 
+\#define {\bfseries B\+G\+N\+A\+M\+E\+S\+E\+LT}~fill\+Rect(X\+Pos,Y\+Pos-\/I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT+2,V\+A\+L\+C\+OL,I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT,B\+L\+UE)
+\item 
+\#define {\bfseries B\+G\+N\+A\+M\+E\+N\+O\+RM}~fill\+Rect(X\+Pos,Y\+Pos-\/I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT+2,V\+A\+L\+C\+OL,I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT,B\+L\+A\+CK)
+\item 
+\#define {\bfseries B\+G\+V\+A\+L\+S\+E\+LT}~fill\+Rect(X\+Pos+V\+A\+L\+C\+OL,Y\+Pos-\/I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT+2,S\+C\+R\+E\+E\+N\+W\+I\+D\+TH-\/V\+A\+L\+C\+OL,I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT,B\+L\+UE)
+\item 
+\#define {\bfseries B\+G\+V\+ST}~fill\+Rect(X\+Pos+V\+A\+L\+C\+OL,Y\+Pos-\/I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT+2,S\+C\+R\+E\+E\+N\+W\+I\+D\+TH-\/V\+A\+L\+C\+OL,I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT,Y\+E\+L\+L\+OW)
+\item 
+\#define {\bfseries B\+G\+V\+A\+L\+N\+O\+RM}~fill\+Rect(X\+Pos+V\+A\+L\+C\+OL,Y\+Pos-\/I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT+2,S\+C\+R\+E\+E\+N\+W\+I\+D\+TH-\/V\+A\+L\+C\+OL,I\+T\+E\+M\+C\+H\+A\+R\+H\+E\+I\+G\+HT,B\+L\+A\+CK)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Itemize various Display differences Custom Fonts -\/ \href{https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts}{\texttt{ https\+://learn.\+adafruit.\+com/adafruit-\/gfx-\/graphics-\/library/using-\/fonts}}. 
+

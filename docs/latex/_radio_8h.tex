@@ -1,0 +1,94 @@
+\hypertarget{_radio_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/\#Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+E32-\/20\+C9/\+Radio.h File Reference}
+\label{_radio_8h}\index{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/Radio.h@{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/Radio.h}}
+
+
+\mbox{\hyperlink{class_radio}{Radio}} Base Class.  
+
+
+{\ttfamily \#include \char`\"{}Const.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$E\+E\+P\+R\+O\+M.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_rx_packet}{Rx\+Packet}}
+\item 
+class \mbox{\hyperlink{class_radio}{Radio}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_radio}{Radio}} Interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_e32_radio}{E32\+Radio}}
+\begin{DoxyCompactList}\small\item\em On-\/\+Demand Connect R\+F-\/\+Radio Serial to Arduino U\+SB Serial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+N\+O\+T\+S\+ET}~0x\+FF
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+P\+I\+NG}~0x7F
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+E\+T\+C\+O\+N\+F\+IG}~0x7E
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+E\+T\+V\+A\+LS}~0x7D
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+E\+T\+V\+AL}~0x7C
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+S\+E\+T\+V\+AL}~0x70
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+P\+I\+N\+G\+B\+A\+CK}~0x5F
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+O\+T\+C\+O\+N\+F\+IG}~0x5E
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+O\+T\+V\+A\+LS}~0x5D
+\item 
+\#define {\bfseries P\+K\+T\+\_\+\+G\+O\+T\+V\+AL}~0x5C
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+T\+Y\+PE}~0
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+F\+R\+O\+M\+\_\+\+R\+FH}~1
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+F\+R\+O\+M\+\_\+\+R\+FL}~2
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+T\+O\+D\+E\+V\+ER}~3
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+I\+N\+D\+EX}~4
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+V\+A\+L\+U\+EH}~5
+\item 
+\#define {\bfseries P\+K\+B\+\_\+\+V\+A\+L\+U\+EL}~6
+\item 
+\#define \mbox{\hyperlink{group___p_k_v_ga296513293cf451f0886d2f07ce43f44c}{P\+K\+V\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+I\+ME}}~30000
+\begin{DoxyCompactList}\small\item\em How long a G\+OT value till marked expired. \end{DoxyCompactList}\item 
+\#define {\bfseries P\+K\+V\+\_\+\+N\+O\+NE}~0x\+F\+E\+FE
+\item 
+\#define {\bfseries P\+K\+V\+\_\+\+E\+X\+P\+I\+R\+ED}~0x\+F\+E\+FD
+\item 
+\#define {\bfseries R\+F\+\_\+\+I\+T\+E\+M\+\_\+\+N\+O\+NE}~0x\+FE
+\item 
+\#define {\bfseries P\+K\+V\+\_\+\+N\+O\+NE}~0x\+F\+E\+FE
+\item 
+\#define {\bfseries P\+K\+V\+\_\+\+E\+X\+P\+I\+R\+ED}~0x\+F\+E\+FD
+\item 
+\#define {\bfseries R\+F\+\_\+\+I\+T\+E\+M\+\_\+\+N\+O\+NE}~0x\+FE
+\item 
+\#define {\bfseries E32\+H\+E\+AD}~0
+\item 
+\#define {\bfseries E32\+A\+D\+DH}~1
+\item 
+\#define {\bfseries E32\+A\+D\+DL}~2
+\item 
+\#define {\bfseries E32\+S\+P\+E\+ED}~3
+\item 
+\#define {\bfseries E32\+C\+H\+AN}~4
+\item 
+\#define {\bfseries E32\+O\+P\+T\+I\+ON}~5
+\item 
+\#define {\bfseries E32\+\_\+\+N\+O\+R\+M\+M\+O\+DE}~0
+\item 
+\#define {\bfseries E32\+\_\+\+W\+A\+K\+E\+M\+O\+DE}~1
+\item 
+\#define {\bfseries E32\+\_\+\+P\+W\+R\+S\+A\+VE}~2
+\item 
+\#define {\bfseries E32\+\_\+\+S\+L\+E\+E\+P\+M\+O\+DE}~3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_radio}{Radio}} Base Class. 
+

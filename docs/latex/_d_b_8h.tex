@@ -1,0 +1,67 @@
+\hypertarget{_d_b_8h}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/lib/\+DB.h File Reference}
+\label{_d_b_8h}\index{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/lib/DB.h@{C:/Users/TGIT-\/TECH/Documents/"!Projects/Tode-\/RC/firmware/Tode-\/RC-\/211U/lib/DB.h}}
+
+
+Debug Pre-\/\+Compiler Constants.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_b_ga98e1870af5a087143c11d0004159eef4}{D\+E\+B\+U\+G\+L\+E\+V\+EL}}~10
+\begin{DoxyCompactList}\small\item\em \mbox{[}0\mbox{]}=N\+O\+NE, \mbox{[}1\mbox{]}=E\+R\+R\+OR, \mbox{[}2\mbox{]}=I\+N\+IT, \mbox{[}3\mbox{]}=I\+N\+FO, \mbox{[}4\mbox{]}=E\+N\+T\+ER \end{DoxyCompactList}\item 
+\#define {\bfseries C\+O\+M\+MA}~,
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+AL}(x,  y)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+RA}(x,  y)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+RL}(x)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+println((F(x)));
+\item 
+\#define {\bfseries D\+B\+E\+R\+R\+OR}(x)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));
+\item 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+AL}(x,  y)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+I\+TA}(x,  y)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+IT}(x)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));
+\item 
+\#define {\bfseries D\+B\+I\+N\+I\+TL}(x)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+println((F(x)));
+\item 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+AL}(x,  y)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+F\+OA}(x,  y)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+I\+N\+F\+OL}(x)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+println((F(x)));
+\item 
+\#define {\bfseries D\+B\+I\+N\+FO}(x)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+AL}(x,  y)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+RA}(x,  y)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+RL}(x)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+println((F(x)));
+\item 
+\#define {\bfseries D\+B\+E\+N\+T\+ER}(x)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Debug Pre-\/\+Compiler Constants. 
+

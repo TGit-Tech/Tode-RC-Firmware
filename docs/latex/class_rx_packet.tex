@@ -1,0 +1,91 @@
+\hypertarget{class_rx_packet}{}\doxysection{Rx\+Packet Class Reference}
+\label{class_rx_packet}\index{RxPacket@{RxPacket}}
+
+
+Receiving Byte Protocol for R\+F-\/\+Radio.  
+
+
+
+
+{\ttfamily \#include $<$R\+F\+C.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rx_packet_a896808688b68f9213df6ad5cd7ca939b}\label{class_rx_packet_a896808688b68f9213df6ad5cd7ca939b}} 
+bool \mbox{\hyperlink{class_rx_packet_a896808688b68f9213df6ad5cd7ca939b}{Rx\+Byte}} (byte \+\_\+\+Byte)
+\begin{DoxyCompactList}\small\item\em Returns \textquotesingle{}true\textquotesingle{} at end of Packet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rx_packet_a0f97be80b3b7d1c8db651324f93ad6d8}\label{class_rx_packet_a0f97be80b3b7d1c8db651324f93ad6d8}} 
+bool {\bfseries Is\+Valid} ()
+\item 
+\mbox{\Hypertarget{class_rx_packet_a5145f5b44b7e4d6634755db4734a7c87}\label{class_rx_packet_a5145f5b44b7e4d6634755db4734a7c87}} 
+byte {\bfseries Type} ()
+\item 
+\mbox{\Hypertarget{class_rx_packet_a99815d82087a9241f9ed0618a22032e2}\label{class_rx_packet_a99815d82087a9241f9ed0618a22032e2}} 
+int {\bfseries From\+RF} ()
+\item 
+\mbox{\Hypertarget{class_rx_packet_a9cb398768835cf7c6575e136673ddf04}\label{class_rx_packet_a9cb398768835cf7c6575e136673ddf04}} 
+byte {\bfseries Version} ()
+\item 
+\mbox{\Hypertarget{class_rx_packet_a55f56a6b78dd09d0b6d6d282f99b89bc}\label{class_rx_packet_a55f56a6b78dd09d0b6d6d282f99b89bc}} 
+byte {\bfseries R\+F\+ID} ()
+\item 
+\mbox{\Hypertarget{class_rx_packet_a2346a7874fd2dd8afa8bf80f4cec20a5}\label{class_rx_packet_a2346a7874fd2dd8afa8bf80f4cec20a5}} 
+int \mbox{\hyperlink{class_rx_packet_a2346a7874fd2dd8afa8bf80f4cec20a5}{Set\+Value}} ()
+\begin{DoxyCompactList}\small\item\em P\+K\+T\+\_\+\+S\+E\+T\+V\+AL Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rx_packet_a1bc9e053821c64bed631eebf0c3f1b31}\label{class_rx_packet_a1bc9e053821c64bed631eebf0c3f1b31}} 
+int {\bfseries Value} (byte \+\_\+\+R\+F\+ID)
+\item 
+\mbox{\Hypertarget{class_rx_packet_a7a24dc71a36b5e0de7329d4a2d1ac8fd}\label{class_rx_packet_a7a24dc71a36b5e0de7329d4a2d1ac8fd}} 
+void {\bfseries Save\+Tode\+Config} (int \+\_\+\+E\+E\+Address)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rx_packet_aca7a0c7dc65aa23424e9399a0e627899}\label{class_rx_packet_aca7a0c7dc65aa23424e9399a0e627899}} 
+byte {\bfseries Size} = 0
+\item 
+\mbox{\Hypertarget{class_rx_packet_aa4cce8fadd99217c13a88d5a328cb8c4}\label{class_rx_packet_aa4cce8fadd99217c13a88d5a328cb8c4}} 
+unsigned long {\bfseries Packet\+Start\+Time\+MS} = 0
+\item 
+\mbox{\Hypertarget{class_rx_packet_ab039874c1d782b602fc4fa9f6ece0a97}\label{class_rx_packet_ab039874c1d782b602fc4fa9f6ece0a97}} 
+Arduino\+Queue$<$ byte $>$ $\ast$ {\bfseries Extra\+Bytes} = 0
+\item 
+byte {\bfseries Bytes} \mbox{[}58\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Receiving Byte Protocol for R\+F-\/\+Radio. 
+
+Definition at line 63 of file R\+F\+C.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rx_packet_abf86361986ac763ad6df187a2a06e7c2}\label{class_rx_packet_abf86361986ac763ad6df187a2a06e7c2}} 
+\index{RxPacket@{RxPacket}!Bytes@{Bytes}}
+\index{Bytes@{Bytes}!RxPacket@{RxPacket}}
+\doxysubsubsection{\texorpdfstring{Bytes}{Bytes}}
+{\footnotesize\ttfamily byte Rx\+Packet\+::\+Bytes\mbox{[}58\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255\}}
+
+\end{DoxyCode}
+
+
+Definition at line 83 of file R\+F\+C.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_r_f_c_8h}{R\+F\+C.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_r_f_c_8cpp}{R\+F\+C.\+cpp}}\end{DoxyCompactItemize}

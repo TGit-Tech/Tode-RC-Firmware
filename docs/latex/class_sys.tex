@@ -1,0 +1,81 @@
+\hypertarget{class_sys}{}\doxysection{Sys Class Reference}
+\label{class_sys}\index{Sys@{Sys}}
+
+
+{\bfseries{\mbox{\hyperlink{class_sys}{Sys}}\+:\mbox{\hyperlink{class_navigator}{Navigator}}}} Top-\/\+Level System for Setup, Todes \& This\+Tode\textquotesingle{}s H\+DW / \mbox{\hyperlink{class_device}{Device}} Setup.  
+
+
+
+
+{\ttfamily \#include $<$Sys.\+h$>$}
+
+Inheritance diagram for Sys\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sys}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sys_a7f1b18260d4048fbca92fc1114d68e0f}\label{class_sys_a7f1b18260d4048fbca92fc1114d68e0f}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_sys_a7f1b18260d4048fbca92fc1114d68e0f}{New\+Tode}} (byte \+\_\+\+Index)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_tode}{Tode}} at specified Index or finds one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_aea50a1992f6d4593803acd4714e7e6d5}\label{class_sys_aea50a1992f6d4593803acd4714e7e6d5}} 
+byte \mbox{\hyperlink{class_sys_aea50a1992f6d4593803acd4714e7e6d5}{New\+Tode}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_tode}{Tode}} at a free Index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_ac2716d383a4c9bd0244444b6f3409c26}\label{class_sys_ac2716d383a4c9bd0244444b6f3409c26}} 
+\mbox{\hyperlink{class_tode}{Tode}} $\ast$ \mbox{\hyperlink{class_sys_ac2716d383a4c9bd0244444b6f3409c26}{R\+F\+Tode}} (unsigned int R\+F\+Address, bool Create=false)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_tode}{Tode}} pointer by RF Address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_a3b638745fea3d2ce6f5d57671b703fd4}\label{class_sys_a3b638745fea3d2ce6f5d57671b703fd4}} 
+byte \mbox{\hyperlink{class_sys_a3b638745fea3d2ce6f5d57671b703fd4}{Loop}} (byte \+\_\+\+Final\+Key) override
+\begin{DoxyCompactList}\small\item\em Last Return key for Adding Devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sys_af82d2e5471b8fc10b1e42cc3dd18aad2}\label{class_sys_af82d2e5471b8fc10b1e42cc3dd18aad2}} 
+\mbox{\hyperlink{class_add_tode}{Add\+Tode}} $\ast$ \mbox{\hyperlink{class_sys_af82d2e5471b8fc10b1e42cc3dd18aad2}{Add\+A\+Tode}} = 0
+\begin{DoxyCompactList}\small\item\em Menu Item used to Add a \mbox{\hyperlink{class_tode}{Tode}} Config. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_afdb265ef31807f6f60e74ca8cc3c320a}\label{class_sys_afdb265ef31807f6f60e74ca8cc3c320a}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_sys_afdb265ef31807f6f60e74ca8cc3c320a}{Setup\+Menu}} = 0
+\begin{DoxyCompactList}\small\item\em Setup the System Menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_a4ea0d4d25f11e815d0cd1392537daf0a}\label{class_sys_a4ea0d4d25f11e815d0cd1392537daf0a}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_sys_a4ea0d4d25f11e815d0cd1392537daf0a}{Device\+List}} = 0
+\begin{DoxyCompactList}\small\item\em This\+Tode \mbox{\hyperlink{class_device}{Device}} List. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_a834ab6f864089a54d830354c26e14445}\label{class_sys_a834ab6f864089a54d830354c26e14445}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Todes\+Menu} = 0
+\item 
+\mbox{\Hypertarget{class_sys_a22cd22c82f85dea4fbc3ae040dd5f7e8}\label{class_sys_a22cd22c82f85dea4fbc3ae040dd5f7e8}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_sys_a22cd22c82f85dea4fbc3ae040dd5f7e8}{Add\+Device\+List}} = 0
+\begin{DoxyCompactList}\small\item\em Add \mbox{\hyperlink{class_device}{Device}} drivers for Adding by-\/menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_a8c92060f64c7c7a61efa472419d8f489}\label{class_sys_a8c92060f64c7c7a61efa472419d8f489}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Del\+Todes\+List} = 0
+\item 
+\mbox{\Hypertarget{class_sys_ae1e329ac08d989c19d2d1a4d077335c4}\label{class_sys_ae1e329ac08d989c19d2d1a4d077335c4}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_sys_ae1e329ac08d989c19d2d1a4d077335c4}{Radio\+Settings}} = 0
+\begin{DoxyCompactList}\small\item\em RF Radio Settings on Sublist. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sys_ab783e1a47516fdf57b6f6702145c2dfc}\label{class_sys_ab783e1a47516fdf57b6f6702145c2dfc}} 
+\mbox{\hyperlink{class_tode}{Tode}} $\ast$ \mbox{\hyperlink{class_sys_ab783e1a47516fdf57b6f6702145c2dfc}{Todes\+Ptr}} \mbox{[}10\mbox{]} = \{0,0,0,0,0,0,0,0,0,0\}
+\begin{DoxyCompactList}\small\item\em Indexed Pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sys_a01280e98ea82e595f64b94d2440fb7fc}\label{class_sys_a01280e98ea82e595f64b94d2440fb7fc}} 
+\mbox{\hyperlink{class_tode}{Tode}} $\ast$ {\bfseries This\+Tode} = 0
+\item 
+\mbox{\Hypertarget{class_sys_a45853a325e0f7b68d57a394a84b77f2f}\label{class_sys_a45853a325e0f7b68d57a394a84b77f2f}} 
+int {\bfseries R\+F\+Addr} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{\mbox{\hyperlink{class_sys}{Sys}}\+:\mbox{\hyperlink{class_navigator}{Navigator}}}} Top-\/\+Level System for Setup, Todes \& This\+Tode\textquotesingle{}s H\+DW / \mbox{\hyperlink{class_device}{Device}} Setup. 
+
+Definition at line 29 of file Sys.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_sys_8h}{Sys.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_sys_8cpp}{Sys.\+cpp}}\end{DoxyCompactItemize}

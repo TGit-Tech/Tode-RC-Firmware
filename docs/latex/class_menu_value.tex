@@ -1,0 +1,95 @@
+\hypertarget{class_menu_value}{}\doxysection{Menu\+Value Class Reference}
+\label{class_menu_value}\index{MenuValue@{MenuValue}}
+
+
+{\bfseries{I\+T\+EM}} adds local {\itshape V\+A\+L\+UE} to \mbox{\hyperlink{class_menu_name}{Menu\+Name}} for \textquotesingle{}Name-\/$>$Value\textquotesingle{} Pairs Offers Number-\/\+Naming ability Offers Value Setting ability with optional Digit-\/\+Set or Incremental  
+
+
+
+
+{\ttfamily \#include $<$i\+Lib.\+h$>$}
+
+Inheritance diagram for Menu\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.097345cm]{class_menu_value}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_menu_value_1_1_number_name}{Number\+Name}}
+\begin{DoxyCompactList}\small\item\em Text-\/\+Name Numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_value_aef21897d01225df462148c19b22645a4}\label{class_menu_value_aef21897d01225df462148c19b22645a4}} 
+\mbox{\hyperlink{class_menu_value_aef21897d01225df462148c19b22645a4}{Menu\+Value}} (const char $\ast$\+\_\+\+C\+Name, byte \+\_\+\+Value\+Type=0)
+\begin{DoxyCompactList}\small\item\em C\+Name + C\+Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a832ded9255f64590bd98e97baf48cb96}\label{class_menu_value_a832ded9255f64590bd98e97baf48cb96}} 
+\mbox{\hyperlink{class_menu_value_a832ded9255f64590bd98e97baf48cb96}{Menu\+Value}} (int \+\_\+\+E\+E\+Name\+Address, bool \+\_\+\+Name\+Settable=false, byte \+\_\+\+Value\+Type=0)
+\begin{DoxyCompactList}\small\item\em E\+E\+Name + C\+Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a1df8997d76adce6e266441ba5948c425}\label{class_menu_value_a1df8997d76adce6e266441ba5948c425}} 
+virtual byte \mbox{\hyperlink{class_menu_value_a1df8997d76adce6e266441ba5948c425}{Navigate}} (byte \+\_\+\+Key) override
+\begin{DoxyCompactList}\small\item\em Keypad Navigate by K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a9149ae148e8fa6589b5c54782a5a3e8c}\label{class_menu_value_a9149ae148e8fa6589b5c54782a5a3e8c}} 
+virtual void \mbox{\hyperlink{class_menu_value_a9149ae148e8fa6589b5c54782a5a3e8c}{Disp\+Item}} (byte \+\_\+\+X\+Pos=0, byte \+\_\+\+Y\+Pos=0) override
+\begin{DoxyCompactList}\small\item\em Display the Item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a7335b8e938b43060aecc4f64f94c0954}\label{class_menu_value_a7335b8e938b43060aecc4f64f94c0954}} 
+virtual int \mbox{\hyperlink{class_menu_value_a7335b8e938b43060aecc4f64f94c0954}{Value}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Item Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_ae7dbae1485e2fe0c4ecbb2b964681be9}\label{class_menu_value_ae7dbae1485e2fe0c4ecbb2b964681be9}} 
+virtual void \mbox{\hyperlink{class_menu_value_ae7dbae1485e2fe0c4ecbb2b964681be9}{Value}} (int \+\_\+\+Value, byte \+\_\+\+Status=\mbox{\hyperlink{group___s_t_s_ga23d8dde05ba79d9933910cb21f689409}{S\+T\+S\+N\+O\+R\+M\+AL}})
+\begin{DoxyCompactList}\small\item\em S\+ET Item Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_ac5de090699e6181c59567f25660f2ab7}\label{class_menu_value_ac5de090699e6181c59567f25660f2ab7}} 
+virtual void \mbox{\hyperlink{class_menu_value_ac5de090699e6181c59567f25660f2ab7}{Value\+Range}} (int \+\_\+\+V\+Min, int \+\_\+\+V\+Max)
+\begin{DoxyCompactList}\small\item\em S\+ET the Value Range. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_ab38488fbfd8f9461622a2d4d3f71ddee}\label{class_menu_value_ab38488fbfd8f9461622a2d4d3f71ddee}} 
+virtual void \mbox{\hyperlink{class_menu_value_ab38488fbfd8f9461622a2d4d3f71ddee}{Set\+Number\+Name}} (int \+\_\+\+Value, const char $\ast$\+\_\+\+N\+Name)
+\begin{DoxyCompactList}\small\item\em S\+ET a Text-\/\+Name for certain N\+U\+M\+B\+E\+RS. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a09237482a84f4ec799c7d58441de977b}\label{class_menu_value_a09237482a84f4ec799c7d58441de977b}} 
+virtual void \mbox{\hyperlink{class_menu_value_a09237482a84f4ec799c7d58441de977b}{Display\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Display the Row-\/\+Value ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_value_a5834652723c56a4c59662ef7b961a5dd}\label{class_menu_value_a5834652723c56a4c59662ef7b961a5dd}} 
+virtual byte \mbox{\hyperlink{class_menu_value_a5834652723c56a4c59662ef7b961a5dd}{Nav\+Value}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em Navigate the Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_ab99b19062c48796932a4680bfa3d568c}\label{class_menu_value_ab99b19062c48796932a4680bfa3d568c}} 
+virtual byte \mbox{\hyperlink{class_menu_value_ab99b19062c48796932a4680bfa3d568c}{Nav\+Value\+Set}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em Navigate a Value Set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_value_ae9bf82c6d6aa3087504c0ca3417f6ede}\label{class_menu_value_ae9bf82c6d6aa3087504c0ca3417f6ede}} 
+int {\bfseries V\+Min} = -\/32768
+\item 
+\mbox{\Hypertarget{class_menu_value_a083eedcb1feffc87bcdea9e6e1a7bd87}\label{class_menu_value_a083eedcb1feffc87bcdea9e6e1a7bd87}} 
+int \mbox{\hyperlink{class_menu_value_a083eedcb1feffc87bcdea9e6e1a7bd87}{V\+Max}} = 32767
+\begin{DoxyCompactList}\small\item\em -\/32,766 to 32,767 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_ad159ea001ff3f601ef5ac29fa8579117}\label{class_menu_value_ad159ea001ff3f601ef5ac29fa8579117}} 
+int \mbox{\hyperlink{class_menu_value_ad159ea001ff3f601ef5ac29fa8579117}{i\+Value}} = \mbox{\hyperlink{group___i_v_gae83a30639c7a424a2860278801f464c3}{I\+V\+N\+O\+T\+S\+ET}}
+\begin{DoxyCompactList}\small\item\em 2s Compliment to -\/32,768 \mbox{[} 0x8000 \mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_add9e87716d93211af8be32a966dacd41}\label{class_menu_value_add9e87716d93211af8be32a966dacd41}} 
+byte \mbox{\hyperlink{class_menu_value_add9e87716d93211af8be32a966dacd41}{V\+Type}} = 0
+\begin{DoxyCompactList}\small\item\em Value Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_value_a135ff18dee270b21344652ce2708aabc}\label{class_menu_value_a135ff18dee270b21344652ce2708aabc}} 
+int \mbox{\hyperlink{class_menu_value_a135ff18dee270b21344652ce2708aabc}{i\+Set\+To}} = 0
+\begin{DoxyCompactList}\small\item\em Set-\/\+To Integer Variable ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{I\+T\+EM}} adds local {\itshape V\+A\+L\+UE} to \mbox{\hyperlink{class_menu_name}{Menu\+Name}} for \textquotesingle{}Name-\/$>$Value\textquotesingle{} Pairs Offers Number-\/\+Naming ability Offers Value Setting ability with optional Digit-\/\+Set or Incremental 
+
+Definition at line 93 of file i\+Lib.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{i_lib_8h}{i\+Lib.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/i\+Lib.\+cpp\end{DoxyCompactItemize}

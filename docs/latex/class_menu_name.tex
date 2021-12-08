@@ -1,0 +1,79 @@
+\hypertarget{class_menu_name}{}\doxysection{Menu\+Name Class Reference}
+\label{class_menu_name}\index{MenuName@{MenuName}}
+
+
+{\bfseries{I\+T\+EM}} adds {\itshape N\+A\+ME} to \mbox{\hyperlink{class_menu_item}{Menu\+Item}} stored in either M\+EM or E\+E\+P\+R\+OM determined by Constructor.  
+
+
+
+
+{\ttfamily \#include $<$i\+Lib.\+h$>$}
+
+Inheritance diagram for Menu\+Name\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.097345cm]{class_menu_name}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_name_a036f953330ee08c0df73fa744d6d5578}\label{class_menu_name_a036f953330ee08c0df73fa744d6d5578}} 
+\mbox{\hyperlink{class_menu_name_a036f953330ee08c0df73fa744d6d5578}{Menu\+Name}} (const char $\ast$\+\_\+\+C\+Name=0, \mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$\+\_\+\+Sub\+List=0)
+\begin{DoxyCompactList}\small\item\em M\+EM Name Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a8704f63f7fa9ed8495f276eb6e9f24b1}\label{class_menu_name_a8704f63f7fa9ed8495f276eb6e9f24b1}} 
+\mbox{\hyperlink{class_menu_name_a8704f63f7fa9ed8495f276eb6e9f24b1}{Menu\+Name}} (const char $\ast$\+\_\+\+C\+Name, byte \+\_\+\+Return\+Key)
+\begin{DoxyCompactList}\small\item\em M\+EM Name assigned return K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a9d87090319774ebd8d44169158807ee3}\label{class_menu_name_a9d87090319774ebd8d44169158807ee3}} 
+\mbox{\hyperlink{class_menu_name_a9d87090319774ebd8d44169158807ee3}{Menu\+Name}} (int \+\_\+\+E\+E\+Name\+Address, bool \+\_\+\+Name\+Settable=false)
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Name Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a6ac264ee7b15a8b82106650bf6321085}\label{class_menu_name_a6ac264ee7b15a8b82106650bf6321085}} 
+virtual const char $\ast$ \mbox{\hyperlink{class_menu_name_a6ac264ee7b15a8b82106650bf6321085}{Name}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Item Name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_ad89c47b06305869a909b3aa4bf8163ae}\label{class_menu_name_ad89c47b06305869a909b3aa4bf8163ae}} 
+virtual void \mbox{\hyperlink{class_menu_name_ad89c47b06305869a909b3aa4bf8163ae}{Name}} (const char $\ast$\+\_\+\+Name)
+\begin{DoxyCompactList}\small\item\em S\+ET Item Name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_name_a509475fb78bfafbd78e9cc9dd8be5744}\label{class_menu_name_a509475fb78bfafbd78e9cc9dd8be5744}} 
+virtual byte \mbox{\hyperlink{class_menu_name_a509475fb78bfafbd78e9cc9dd8be5744}{Navigate}} (byte \+\_\+\+Key) override
+\begin{DoxyCompactList}\small\item\em Keypad Navigate by K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a3a0c204b96044155be88d558ac08e466}\label{class_menu_name_a3a0c204b96044155be88d558ac08e466}} 
+virtual void \mbox{\hyperlink{class_menu_name_a3a0c204b96044155be88d558ac08e466}{Disp\+Item}} (byte \+\_\+\+X\+Pos=0, byte \+\_\+\+Y\+Pos=0) override
+\begin{DoxyCompactList}\small\item\em Display the Item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a0a8f1a28af91f894a8a9961770735741}\label{class_menu_name_a0a8f1a28af91f894a8a9961770735741}} 
+virtual byte \mbox{\hyperlink{class_menu_name_a0a8f1a28af91f894a8a9961770735741}{Nav\+None}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em N\+O\+NE Navigate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_ae28a4e0d550a5f752616d936cc3487e3}\label{class_menu_name_ae28a4e0d550a5f752616d936cc3487e3}} 
+virtual byte \mbox{\hyperlink{class_menu_name_ae28a4e0d550a5f752616d936cc3487e3}{Nav\+Name}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em N\+A\+ME Navigate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a95d612ed3b7055d76e2696829e3d4822}\label{class_menu_name_a95d612ed3b7055d76e2696829e3d4822}} 
+virtual byte \mbox{\hyperlink{class_menu_name_a95d612ed3b7055d76e2696829e3d4822}{Nav\+Name\+Set}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em N\+A\+ME S\+ET Navigate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_af3cd910ae6ec24c2fb8ca4ecc7c511f2}\label{class_menu_name_af3cd910ae6ec24c2fb8ca4ecc7c511f2}} 
+virtual void \mbox{\hyperlink{class_menu_name_af3cd910ae6ec24c2fb8ca4ecc7c511f2}{Display\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Display the Row-\/\+Name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a55d6452e534e61189b6604280a64bee0}\label{class_menu_name_a55d6452e534e61189b6604280a64bee0}} 
+virtual void \mbox{\hyperlink{class_menu_name_a55d6452e534e61189b6604280a64bee0}{Display\+Name\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Display the Full-\/\+Screen Name-\/\+Set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_name_a034ec63fac66166a4cb7a793e8d07c4f}\label{class_menu_name_a034ec63fac66166a4cb7a793e8d07c4f}} 
+virtual void {\bfseries On\+Display} (bool \+\_\+\+On\+Display) override
+\item 
+\mbox{\Hypertarget{class_menu_name_ab18e9d26a7d573ff5deb0cea56fe118e}\label{class_menu_name_ab18e9d26a7d573ff5deb0cea56fe118e}} 
+virtual bool {\bfseries On\+Display} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{I\+T\+EM}} adds {\itshape N\+A\+ME} to \mbox{\hyperlink{class_menu_item}{Menu\+Item}} stored in either M\+EM or E\+E\+P\+R\+OM determined by Constructor. 
+
+Definition at line 50 of file i\+Lib.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{i_lib_8h}{i\+Lib.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/i\+Lib.\+cpp\end{DoxyCompactItemize}

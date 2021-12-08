@@ -1,0 +1,65 @@
+\hypertarget{class_radio_i}{}\doxysection{RadioI Class Reference}
+\label{class_radio_i}\index{RadioI@{RadioI}}
+
+
+Common Interface Base-\/\+Class for various R\+F-\/\+Radios.  
+
+
+
+
+{\ttfamily \#include $<$R\+F\+C.\+h$>$}
+
+Inheritance diagram for RadioI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_radio_i}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_radio_i_aeec86523b13e5fd19388129c4c08cc6f}\label{class_radio_i_aeec86523b13e5fd19388129c4c08cc6f}} 
+virtual void {\bfseries Mode} (byte \+\_\+\+Mode)
+\item 
+\mbox{\Hypertarget{class_radio_i_a8221d6fa7c82a5574c033996e86fea10}\label{class_radio_i_a8221d6fa7c82a5574c033996e86fea10}} 
+virtual byte \mbox{\hyperlink{class_radio_i_a8221d6fa7c82a5574c033996e86fea10}{Mode}} ()
+\begin{DoxyCompactList}\small\item\em S\+ET \mbox{\hyperlink{group___e32_m_o_d_e_s}{Ebyte-\/\+E32 Modes}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a0166f8a1cf81e83db9fc8e06843e2ca5}\label{class_radio_i_a0166f8a1cf81e83db9fc8e06843e2ca5}} 
+virtual void \mbox{\hyperlink{class_radio_i_a0166f8a1cf81e83db9fc8e06843e2ca5}{Address}} (unsigned int \+\_\+\+R\+F\+Address)
+\begin{DoxyCompactList}\small\item\em G\+ET \mbox{\hyperlink{group___e32_m_o_d_e_s}{Ebyte-\/\+E32 Modes}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a0bf06ada6bb10da21be5f574f38c3a1f}\label{class_radio_i_a0bf06ada6bb10da21be5f574f38c3a1f}} 
+virtual unsigned int \mbox{\hyperlink{class_radio_i_a0bf06ada6bb10da21be5f574f38c3a1f}{Address}} ()
+\begin{DoxyCompactList}\small\item\em S\+ET Radio R\+F-\/\+Address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a4646f5ca0b7ebe4c3e832c63766cfdae}\label{class_radio_i_a4646f5ca0b7ebe4c3e832c63766cfdae}} 
+virtual void \mbox{\hyperlink{class_radio_i_a4646f5ca0b7ebe4c3e832c63766cfdae}{Frequency}} (int \+\_\+\+R\+F\+Frequency)
+\begin{DoxyCompactList}\small\item\em G\+ET Radio R\+F-\/\+Address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a18acde21da7b6b35d5be8894059890cd}\label{class_radio_i_a18acde21da7b6b35d5be8894059890cd}} 
+virtual int \mbox{\hyperlink{class_radio_i_a18acde21da7b6b35d5be8894059890cd}{Frequency}} ()
+\begin{DoxyCompactList}\small\item\em S\+ET Radio Frequency Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a3c3071c3ecb4cd331fe6234abd8daaaf}\label{class_radio_i_a3c3071c3ecb4cd331fe6234abd8daaaf}} 
+virtual byte \mbox{\hyperlink{class_radio_i_a3c3071c3ecb4cd331fe6234abd8daaaf}{Channel}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Radio Frequency Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a92e8aa73b09b764a0320370fd2c3d682}\label{class_radio_i_a92e8aa73b09b764a0320370fd2c3d682}} 
+virtual void \mbox{\hyperlink{class_radio_i_a92e8aa73b09b764a0320370fd2c3d682}{Tx\+Power}} (byte \+\_\+\+Tx\+Power)
+\begin{DoxyCompactList}\small\item\em G\+ET Channel and Return to Normal Mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a19563619d0657be6fa1953d1b0b4292f}\label{class_radio_i_a19563619d0657be6fa1953d1b0b4292f}} 
+virtual byte \mbox{\hyperlink{class_radio_i_a19563619d0657be6fa1953d1b0b4292f}{Tx\+Power}} ()
+\begin{DoxyCompactList}\small\item\em S\+ET Radio Tx Power Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_ab4485fb4ca3a020f02f3dfb321e9ffdb}\label{class_radio_i_ab4485fb4ca3a020f02f3dfb321e9ffdb}} 
+virtual bool \mbox{\hyperlink{class_radio_i_ab4485fb4ca3a020f02f3dfb321e9ffdb}{Packet\+Available}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Radio Tx Power Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_radio_i_a0feaf98ebb02bd185e09b9f1bf482612}\label{class_radio_i_a0feaf98ebb02bd185e09b9f1bf482612}} 
+virtual void {\bfseries Send} (\mbox{\hyperlink{class_tx_packet}{Tx\+Packet}} $\ast$Tx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common Interface Base-\/\+Class for various R\+F-\/\+Radios. 
+
+Definition at line 125 of file R\+F\+C.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_r_f_c_8h}{R\+F\+C.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{class_tode}{}\doxysection{Tode Class Reference}
+\label{class_tode}\index{Tode@{Tode}}
+
+
+{\bfseries{L\+I\+ST}} represents a Physical \mbox{\hyperlink{class_tode}{Tode}} with a list of \mbox{\hyperlink{class_device}{Device}} (s)  
+
+
+
+
+{\ttfamily \#include $<$L\+Hdw.\+h$>$}
+
+Inheritance diagram for Tode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tode_a069864f6745185955b0bb2ee102d84a7}\label{class_tode_a069864f6745185955b0bb2ee102d84a7}} 
+\mbox{\hyperlink{class_tode_a069864f6745185955b0bb2ee102d84a7}{Tode}} (byte \+\_\+\+Tode\+Index)
+\begin{DoxyCompactList}\small\item\em Constructor Index(0-\/9) eqv-\/to. E\+E\+P\+R\+OM Address of. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a2f235e21355ea1329b7912175d51d3b9}\label{class_tode_a2f235e21355ea1329b7912175d51d3b9}} 
+virtual const char $\ast$ \mbox{\hyperlink{class_tode_a2f235e21355ea1329b7912175d51d3b9}{Title}} () override
+\begin{DoxyCompactList}\small\item\em Points to Tode\+Name-\/$>$Name() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a1aa0525a38f53d2795606b83459d227d}\label{class_tode_a1aa0525a38f53d2795606b83459d227d}} 
+virtual void \mbox{\hyperlink{class_tode_a1aa0525a38f53d2795606b83459d227d}{Update}} () override
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{class_tode}{Tode}} Information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a21061fd9e7758985baced2a3a5d530d9}\label{class_tode_a21061fd9e7758985baced2a3a5d530d9}} 
+virtual \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ \mbox{\hyperlink{class_tode_a21061fd9e7758985baced2a3a5d530d9}{New\+Device}} (byte \+\_\+\+D\+T\+Key)
+\begin{DoxyCompactList}\small\item\em Creates \& Adds a New \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_aec3a04f5a272f254da9d099b1cf752cd}\label{class_tode_aec3a04f5a272f254da9d099b1cf752cd}} 
+virtual \mbox{\hyperlink{class_menu_item}{Menu\+Item}} $\ast$ \mbox{\hyperlink{class_tode_aec3a04f5a272f254da9d099b1cf752cd}{Add\+Device}} (byte \+\_\+\+D\+T\+Key, byte \+\_\+\+R\+F\+ID)
+\begin{DoxyCompactList}\small\item\em Menu add \mbox{\hyperlink{class_device}{Device}} using K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a27aca189000c3737a2f00fc2c2e897f7}\label{class_tode_a27aca189000c3737a2f00fc2c2e897f7}} 
+virtual void {\bfseries E\+E\+Load\+Devices} ()
+\item 
+\mbox{\Hypertarget{class_tode_a81d7f948e226227cd24246884d9062fe}\label{class_tode_a81d7f948e226227cd24246884d9062fe}} 
+virtual unsigned int \mbox{\hyperlink{class_tode_a81d7f948e226227cd24246884d9062fe}{R\+F\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET R\+F-\/\+Address stored in E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a1acb0c85fcbff9d2bcae19f8bbd177d6}\label{class_tode_a1acb0c85fcbff9d2bcae19f8bbd177d6}} 
+virtual void \mbox{\hyperlink{class_tode_a1acb0c85fcbff9d2bcae19f8bbd177d6}{R\+F\+Addr}} (unsigned int \+\_\+\+R\+F\+Addr)
+\begin{DoxyCompactList}\small\item\em S\+ET R\+F-\/\+Address stored in E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a912aa3d7150bab0ec181ea7c3ffa784b}\label{class_tode_a912aa3d7150bab0ec181ea7c3ffa784b}} 
+virtual byte \mbox{\hyperlink{class_tode_a912aa3d7150bab0ec181ea7c3ffa784b}{Version}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET \mbox{\hyperlink{class_tode}{Tode}}\textquotesingle{}s Configuration Ver. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a567b64456c4d62a8ef873ca2bef92e73}\label{class_tode_a567b64456c4d62a8ef873ca2bef92e73}} 
+virtual void \mbox{\hyperlink{class_tode_a567b64456c4d62a8ef873ca2bef92e73}{Version}} (byte \+\_\+\+Version)
+\begin{DoxyCompactList}\small\item\em S\+ET \mbox{\hyperlink{class_tode}{Tode}}\textquotesingle{}s Configuration Ver. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a29c309ac735bc4477a6d84343c9331d5}\label{class_tode_a29c309ac735bc4477a6d84343c9331d5}} 
+virtual bool \mbox{\hyperlink{class_tode_a29c309ac735bc4477a6d84343c9331d5}{Is\+Local}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET (Tode\+Index == 0) Set in the Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a35e7fa4e787966eb0bd6aedf5f90bb25}\label{class_tode_a35e7fa4e787966eb0bd6aedf5f90bb25}} 
+virtual int \mbox{\hyperlink{class_tode_a35e7fa4e787966eb0bd6aedf5f90bb25}{E\+E\+Address}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET E\+E\+P\+R\+OM Address of This \mbox{\hyperlink{class_tode}{Tode}} (Calc by Tode\+Index) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tode_a000c37a5281ed26da19b174280a040d6}\label{class_tode_a000c37a5281ed26da19b174280a040d6}} 
+byte \mbox{\hyperlink{class_tode_a000c37a5281ed26da19b174280a040d6}{Tode\+Index}} = \mbox{\hyperlink{_r_f_c_8h_a2750a00190636997d66cf567af774f97}{B\+N\+O\+NE}}
+\begin{DoxyCompactList}\small\item\em Tode\+Index(0-\/9) assigned by the Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a311f4a58136f34356fbbf5a1feb7895e}\label{class_tode_a311f4a58136f34356fbbf5a1feb7895e}} 
+\mbox{\hyperlink{class_menu_name}{Menu\+Name}} $\ast$ \mbox{\hyperlink{class_tode_a311f4a58136f34356fbbf5a1feb7895e}{Tode\+Name}} =0
+\begin{DoxyCompactList}\small\item\em Tode\+Name Menu-\/\+Item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a787181e4171d6b641cf3e1728d943daa}\label{class_tode_a787181e4171d6b641cf3e1728d943daa}} 
+\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_tode_a787181e4171d6b641cf3e1728d943daa}{Devices}} \mbox{[}\mbox{\hyperlink{group___a_e_b_gab26bcb42882ad4f81f885b2ca3c6f686}{A\+E\+B\+\_\+\+M\+A\+X\+D\+E\+V\+I\+C\+ES}}\mbox{]} = \{0\}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_device}{Device}} Pointers -\/ Index is R\+F\+ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tode_a5f13c0a8b6b80a6563e39cd4a11c1ce5}\label{class_tode_a5f13c0a8b6b80a6563e39cd4a11c1ce5}} 
+\mbox{\hyperlink{class_hdw_select}{Hdw\+Select}} $\ast$ \mbox{\hyperlink{class_tode_a5f13c0a8b6b80a6563e39cd4a11c1ce5}{Hardware}} = 0
+\begin{DoxyCompactList}\small\item\em This \mbox{\hyperlink{class_tode}{Tode}}\textquotesingle{}s Hardware Attached Menu-\/\+Item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{L\+I\+ST}} represents a Physical \mbox{\hyperlink{class_tode}{Tode}} with a list of \mbox{\hyperlink{class_device}{Device}} (s) 
+
+Definition at line 13 of file L\+Hdw.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_l_hdw_8h}{L\+Hdw.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_l_hdw_8cpp}{L\+Hdw.\+cpp}}\end{DoxyCompactItemize}

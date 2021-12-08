@@ -1,0 +1,111 @@
+\hypertarget{group___d_b}{}\doxysection{Debug Directives}
+\label{group___d_b}\index{Debug Directives@{Debug Directives}}
+
+
+D\+B\+E\+R\+R\+OR $\vert$ D\+B\+I\+N\+IT $\vert$ D\+B\+E\+N\+T\+ER $\vert$ D\+B\+I\+N\+FO.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___d_b_ga98e1870af5a087143c11d0004159eef4}\label{group___d_b_ga98e1870af5a087143c11d0004159eef4}} 
+\#define \mbox{\hyperlink{group___d_b_ga98e1870af5a087143c11d0004159eef4}{D\+E\+B\+U\+G\+L\+E\+V\+EL}}~10
+\begin{DoxyCompactList}\small\item\em \mbox{[}0\mbox{]}=N\+O\+NE, \mbox{[}1\mbox{]}=E\+R\+R\+OR, \mbox{[}2\mbox{]}=I\+N\+IT, \mbox{[}3\mbox{]}=I\+N\+FO, \mbox{[}4\mbox{]}=E\+N\+T\+ER \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___d_b_gaa2f49001be13949a16a57e6c99ab00ad}\label{group___d_b_gaa2f49001be13949a16a57e6c99ab00ad}} 
+\#define {\bfseries C\+O\+M\+MA}~,
+\item 
+\mbox{\Hypertarget{group___d_b_gad28b6a30aa33c07a92d12135f3aca321}\label{group___d_b_gad28b6a30aa33c07a92d12135f3aca321}} 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gaafa0ecf28b7a45ca4ba0207cea8a1724}\label{group___d_b_gaafa0ecf28b7a45ca4ba0207cea8a1724}} 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga47e85d13ae1f26733961dfa0d9d39349}\label{group___d_b_ga47e85d13ae1f26733961dfa0d9d39349}} 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+R\+AL}(x,  y)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gaea90edd7332407b32420bd156b037014}\label{group___d_b_gaea90edd7332407b32420bd156b037014}} 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+RA}(x,  y)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga5f38e06647a30ccfca11f4a955903a57}\label{group___d_b_ga5f38e06647a30ccfca11f4a955903a57}} 
+\#define {\bfseries D\+B\+E\+R\+R\+O\+RL}(x)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+println((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_ga5365a987006ef74d696eeba9392ee2d2}\label{group___d_b_ga5365a987006ef74d696eeba9392ee2d2}} 
+\#define {\bfseries D\+B\+E\+R\+R\+OR}(x)~Serial.\+print(F(\char`\"{}!E\+R\+R\+O\+R!-\/\char`\"{}));Serial.\+print((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_gab6ea330c67b5793efd061936abae3cf5}\label{group___d_b_gab6ea330c67b5793efd061936abae3cf5}} 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga1631269a8eed95faff32d297256005d8}\label{group___d_b_ga1631269a8eed95faff32d297256005d8}} 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga42f1cdced86ecb62ca86994b42877eac}\label{group___d_b_ga42f1cdced86ecb62ca86994b42877eac}} 
+\#define {\bfseries D\+B\+I\+N\+I\+T\+AL}(x,  y)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga85c5eaeba7a13c7a78e24799e021716c}\label{group___d_b_ga85c5eaeba7a13c7a78e24799e021716c}} 
+\#define {\bfseries D\+B\+I\+N\+I\+TA}(x,  y)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gabe90579fb9f716b308b93f928daa1a5c}\label{group___d_b_gabe90579fb9f716b308b93f928daa1a5c}} 
+\#define {\bfseries D\+B\+I\+N\+IT}(x)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+print((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_ga2d395c8b81b4338d5f1aaa6f84012d70}\label{group___d_b_ga2d395c8b81b4338d5f1aaa6f84012d70}} 
+\#define {\bfseries D\+B\+I\+N\+I\+TL}(x)~Serial.\+print(F(\char`\"{}@\char`\"{}));Serial.\+println((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_gaa5ce745ae144c4060bfe9ae0eecdf531}\label{group___d_b_gaa5ce745ae144c4060bfe9ae0eecdf531}} 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gadf19440c1af4b07e8869decbdfdf00ed}\label{group___d_b_gadf19440c1af4b07e8869decbdfdf00ed}} 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gad51735d9fddc0bb07805bd834fba20c1}\label{group___d_b_gad51735d9fddc0bb07805bd834fba20c1}} 
+\#define {\bfseries D\+B\+I\+N\+F\+O\+AL}(x,  y)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gadc88fe908eecc05d60a5312bb2d9f99b}\label{group___d_b_gadc88fe908eecc05d60a5312bb2d9f99b}} 
+\#define {\bfseries D\+B\+I\+N\+F\+OA}(x,  y)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gab42627d5f8132a6b1b93be8f3bdff21c}\label{group___d_b_gab42627d5f8132a6b1b93be8f3bdff21c}} 
+\#define {\bfseries D\+B\+I\+N\+F\+OL}(x)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+println((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_ga541011958aae7142dade7d4088088dc5}\label{group___d_b_ga541011958aae7142dade7d4088088dc5}} 
+\#define {\bfseries D\+B\+I\+N\+FO}(x)~Serial.\+print(F(\char`\"{}...\char`\"{}));Serial.\+print((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_gaddce17508c57a6bf36e4c45cb5f7880d}\label{group___d_b_gaddce17508c57a6bf36e4c45cb5f7880d}} 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+A\+AL}(x,  y,  z)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga59a77808bc075a005e569b0a5f10fdbb}\label{group___d_b_ga59a77808bc075a005e569b0a5f10fdbb}} 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+AA}(x,  y,  z)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{},\char`\"{}));Serial.\+print z;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga65c60f43584ee4c19d518926261a50f7}\label{group___d_b_ga65c60f43584ee4c19d518926261a50f7}} 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+R\+AL}(x,  y)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+println(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_ga5c91aade9edf3a022e93bd72de0f7684}\label{group___d_b_ga5c91aade9edf3a022e93bd72de0f7684}} 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+RA}(x,  y)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));Serial.\+print(F(\char`\"{}(\char`\"{}));Serial.\+print y;Serial.\+print(F(\char`\"{})\char`\"{}));
+\item 
+\mbox{\Hypertarget{group___d_b_gadbf082dcf2d3b13093079bd5eef4de32}\label{group___d_b_gadbf082dcf2d3b13093079bd5eef4de32}} 
+\#define {\bfseries D\+B\+E\+N\+T\+E\+RL}(x)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+println((F(x)));
+\item 
+\mbox{\Hypertarget{group___d_b_gaf55031136b369f10b923598e669cd88d}\label{group___d_b_gaf55031136b369f10b923598e669cd88d}} 
+\#define {\bfseries D\+B\+E\+N\+T\+ER}(x)~Serial.\+print(F(\char`\"{}$>$\char`\"{}));Serial.\+print((F(x)));
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+D\+B\+E\+R\+R\+OR $\vert$ D\+B\+I\+N\+IT $\vert$ D\+B\+E\+N\+T\+ER $\vert$ D\+B\+I\+N\+FO. 
+
+
+\begin{DoxyItemize}
+\item Pre-\/\+Compiler Directives for Debug Messaging.
+\item Each-\/\+Type (E\+R\+R\+OR,I\+N\+IT,E\+N\+T\+ER,I\+N\+FO) allows (1 or 2) \mbox{[}A\mbox{]}rgument Variables.
+\item Tailing \mbox{[}L\mbox{]} determines \textquotesingle{}on new line\textquotesingle{}
+\item Message-\/\+Type output is \textquotesingle{}!\+E\+R\+R\+O\+R!\textquotesingle{}, \textquotesingle{}@\textquotesingle{}Init, \textquotesingle{}...\textquotesingle{}Info, \textquotesingle{}$>$\textquotesingle{}Enter
+\item NO trailing \textquotesingle{};\textquotesingle{} is needed. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DBERROR((\textcolor{stringliteral}{"{}Error Message -\/ no new line"{}}))}
+\DoxyCodeLine{DBERRORL(("{}Error Message -\/ new line"{}))}
+\DoxyCodeLine{DBERRORAL(("{}Error Message"{}),(Variable))}
+\DoxyCodeLine{DBERRORAAL(("{}Error Message"{}),(Variable),(Variable))}
+\DoxyCodeLine{DBINITL(("{}Object Initialization Message"{}))}
+\DoxyCodeLine{DBINFOL(("{}General Information"{}))}
+\DoxyCodeLine{DBENTER(("{}Enter Function"{}))}
+\end{DoxyCode}
+ 
+\end{DoxyItemize}

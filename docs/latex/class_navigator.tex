@@ -1,0 +1,68 @@
+\hypertarget{class_navigator}{}\doxysection{Navigator Class Reference}
+\label{class_navigator}\index{Navigator@{Navigator}}
+
+
+{\bfseries{L\+I\+ST of L\+I\+S\+TS}} Top-\/\+Level \mbox{\hyperlink{class_navigator}{Navigator}} of multiple \mbox{\hyperlink{class_menu_list}{Menu\+List}} (s).  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Navigator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_navigator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_navigator_a59230ab4698882f754d5ce275a1a4030}\label{class_navigator_a59230ab4698882f754d5ce275a1a4030}} 
+\mbox{\hyperlink{class_navigator_a59230ab4698882f754d5ce275a1a4030}{Navigator}} ()
+\begin{DoxyCompactList}\small\item\em Constructor sets Display = o\+Display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_navigator_ad0d1892297a4f692061b93ef66aea1b7}\label{class_navigator_ad0d1892297a4f692061b93ef66aea1b7}} 
+virtual byte \mbox{\hyperlink{class_navigator_ad0d1892297a4f692061b93ef66aea1b7}{Navigate}} (byte \+\_\+\+Key)
+\begin{DoxyCompactList}\small\item\em Keypad Navigate by K\+EY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_navigator_aaaa1cd1724e60de126d081e711a40d73}\label{class_navigator_aaaa1cd1724e60de126d081e711a40d73}} 
+virtual \mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ \mbox{\hyperlink{class_navigator_aaaa1cd1724e60de126d081e711a40d73}{Add}} (\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$\+\_\+\+List)
+\begin{DoxyCompactList}\small\item\em A\+DD \mbox{\hyperlink{class_menu_list}{Menu\+List}} to the \mbox{\hyperlink{class_navigator}{Navigator}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_navigator_a57e2e60af29056821a014ad03ba6363f}\label{class_navigator_a57e2e60af29056821a014ad03ba6363f}} 
+virtual void {\bfseries Del} (\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$\+\_\+\+List)
+\item 
+\mbox{\Hypertarget{class_navigator_ac88eb76ef3fcb95346b6a21c74a983c4}\label{class_navigator_ac88eb76ef3fcb95346b6a21c74a983c4}} 
+virtual byte \mbox{\hyperlink{class_navigator_ac88eb76ef3fcb95346b6a21c74a983c4}{Loop}} (byte \+\_\+\+Final\+Key)
+\begin{DoxyCompactList}\small\item\em System loop() \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_navigator_a3867b46bf5b74449fbfd14f2bb710fbb}\label{class_navigator_a3867b46bf5b74449fbfd14f2bb710fbb}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries First\+List} = 0
+\item 
+\mbox{\Hypertarget{class_navigator_a65f80d934838094b4295179d849e80b5}\label{class_navigator_a65f80d934838094b4295179d849e80b5}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Last\+List} = 0
+\item 
+\mbox{\Hypertarget{class_navigator_aae72c4270aa7f8f0f910380a80092a78}\label{class_navigator_aae72c4270aa7f8f0f910380a80092a78}} 
+\mbox{\hyperlink{class_menu_list}{Menu\+List}} $\ast$ {\bfseries Curr\+List} = 0
+\item 
+\mbox{\Hypertarget{class_navigator_aff3b409d59c0aa5e5cab1df792b981e5}\label{class_navigator_aff3b409d59c0aa5e5cab1df792b981e5}} 
+R\+F\+C\+L\+A\+SS $\ast$ {\bfseries RF} = 0
+\item 
+\mbox{\Hypertarget{class_navigator_abc55c63ecac365efaf0ff0376b68bf85}\label{class_navigator_abc55c63ecac365efaf0ff0376b68bf85}} 
+D\+S\+P\+C\+L\+A\+SS $\ast$ {\bfseries Display} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\bfseries{L\+I\+ST of L\+I\+S\+TS}} Top-\/\+Level \mbox{\hyperlink{class_navigator}{Navigator}} of multiple \mbox{\hyperlink{class_menu_list}{Menu\+List}} (s). 
+
+Navigation is preformed by sending keypad pressed to the Top-\/\+Level \mbox{\hyperlink{class_navigator}{Navigator}}. The key will undergo a round-\/robin calling sequence to List-\/\+Navigate then Item-\/\+Navigate objects. If the object has \mbox{\hyperlink{group___s_e_l}{S\+EL = Item-\/\+Element \textquotesingle{}Nav\+Selected\textquotesingle{}}} the key is used by said object and a returning {\itshape command-\/type} non-\/keypad key is returned. See K\+EY 
+
+Definition at line 165 of file Menu.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

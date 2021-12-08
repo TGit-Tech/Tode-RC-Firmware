@@ -1,0 +1,78 @@
+\hypertarget{class_e32_radio}{}\doxysection{E32\+Radio Class Reference}
+\label{class_e32_radio}\index{E32Radio@{E32Radio}}
+
+
+On-\/\+Demand Connect R\+F-\/\+Radio Serial to Arduino U\+SB Serial.  
+
+
+
+
+{\ttfamily \#include $<$E32.\+h$>$}
+
+Inheritance diagram for E32\+Radio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_e32_radio}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_e32_radio_ab6aed07fda5a9011d2443c23ad9a3b8c}\label{class_e32_radio_ab6aed07fda5a9011d2443c23ad9a3b8c}} 
+{\bfseries E32\+Radio} (byte \+\_\+\+Pin\+M0, byte \+\_\+\+Pin\+M1, byte \+\_\+\+Pin\+TX, byte \+\_\+\+Pin\+RX, byte \+\_\+\+Pin\+A\+UX)
+\item 
+\mbox{\Hypertarget{class_e32_radio_a50603e90af10cc3a294a5c5a27e247d7}\label{class_e32_radio_a50603e90af10cc3a294a5c5a27e247d7}} 
+virtual void \mbox{\hyperlink{class_e32_radio_a50603e90af10cc3a294a5c5a27e247d7}{Mode}} (byte \+\_\+\+Mode)
+\begin{DoxyCompactList}\small\item\em S\+ET \mbox{\hyperlink{group___e32_m_o_d_e_s}{Ebyte-\/\+E32 Modes}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a85277f209fb89a76a9296282da910dbc}\label{class_e32_radio_a85277f209fb89a76a9296282da910dbc}} 
+virtual byte \mbox{\hyperlink{class_e32_radio_a85277f209fb89a76a9296282da910dbc}{Mode}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET \mbox{\hyperlink{group___e32_m_o_d_e_s}{Ebyte-\/\+E32 Modes}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_ad4f8959dc9e76aed72a3d4b36258042f}\label{class_e32_radio_ad4f8959dc9e76aed72a3d4b36258042f}} 
+virtual void \mbox{\hyperlink{class_e32_radio_ad4f8959dc9e76aed72a3d4b36258042f}{Address}} (unsigned int \+\_\+\+R\+F\+Address)
+\begin{DoxyCompactList}\small\item\em S\+ET Radio R\+F-\/\+Address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a46c10fd0c1c968088bd6f4f93980ec36}\label{class_e32_radio_a46c10fd0c1c968088bd6f4f93980ec36}} 
+virtual unsigned int \mbox{\hyperlink{class_e32_radio_a46c10fd0c1c968088bd6f4f93980ec36}{Address}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Radio R\+F-\/\+Address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a61b3f973090f55c7b8113facff1392be}\label{class_e32_radio_a61b3f973090f55c7b8113facff1392be}} 
+virtual void \mbox{\hyperlink{class_e32_radio_a61b3f973090f55c7b8113facff1392be}{Frequency}} (int \+\_\+\+R\+F\+Frequency)
+\begin{DoxyCompactList}\small\item\em S\+ET Radio Frequency Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a38fb5172cd119fecb5465db6a3abd826}\label{class_e32_radio_a38fb5172cd119fecb5465db6a3abd826}} 
+virtual int \mbox{\hyperlink{class_e32_radio_a38fb5172cd119fecb5465db6a3abd826}{Frequency}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Radio Frequency Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a3374636ecc6a819598651faeb441a801}\label{class_e32_radio_a3374636ecc6a819598651faeb441a801}} 
+virtual byte \mbox{\hyperlink{class_e32_radio_a3374636ecc6a819598651faeb441a801}{Channel}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Channel and Return to Normal Mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a462d5cf6fcec38d8b238d747d98bd6ce}\label{class_e32_radio_a462d5cf6fcec38d8b238d747d98bd6ce}} 
+virtual void \mbox{\hyperlink{class_e32_radio_a462d5cf6fcec38d8b238d747d98bd6ce}{Tx\+Power}} (byte \+\_\+\+Tx\+Power)
+\begin{DoxyCompactList}\small\item\em S\+ET Radio Tx Power Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a40e7ef6274b8056cb787b0644cdf8708}\label{class_e32_radio_a40e7ef6274b8056cb787b0644cdf8708}} 
+virtual byte \mbox{\hyperlink{class_e32_radio_a40e7ef6274b8056cb787b0644cdf8708}{Tx\+Power}} ()
+\begin{DoxyCompactList}\small\item\em G\+ET Radio Tx Power Setting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a8b8891522e4a032215b9335908e96230}\label{class_e32_radio_a8b8891522e4a032215b9335908e96230}} 
+virtual bool \mbox{\hyperlink{class_e32_radio_a8b8891522e4a032215b9335908e96230}{Packet\+Available}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{_menu_8cpp_aac807c774cbfcd54e866b7e2848b07b8}{Loop()}} query to collect \mbox{\hyperlink{class_rx_packet}{Rx\+Packet}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_abbd7616b52466610e2c10b0f3a97628b}\label{class_e32_radio_abbd7616b52466610e2c10b0f3a97628b}} 
+virtual void \mbox{\hyperlink{class_e32_radio_abbd7616b52466610e2c10b0f3a97628b}{Send}} (\mbox{\hyperlink{class_tx_packet}{Tx\+Packet}} $\ast$Tx)
+\begin{DoxyCompactList}\small\item\em Send a \mbox{\hyperlink{class_tx_packet}{Tx\+Packet}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_e32_radio_aeaea74190a93476ba8bbf7284db98855}\label{class_e32_radio_aeaea74190a93476ba8bbf7284db98855}} 
+\mbox{\hyperlink{class_rx_packet}{Rx\+Packet}} $\ast$ \mbox{\hyperlink{class_e32_radio_aeaea74190a93476ba8bbf7284db98855}{Packet}} = 0
+\begin{DoxyCompactList}\small\item\em The R\+F-\/\+Received Packet data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_e32_radio_a497100d7454389f04a0cc250aeba0ff4}\label{class_e32_radio_a497100d7454389f04a0cc250aeba0ff4}} 
+unsigned long {\bfseries Packet\+Timer} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+On-\/\+Demand Connect R\+F-\/\+Radio Serial to Arduino U\+SB Serial. 
+
+Definition at line 39 of file E32.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_e32_8h}{E32.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_e32_8cpp}{E32.\+cpp}}\end{DoxyCompactItemize}

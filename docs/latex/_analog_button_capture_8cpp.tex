@@ -1,0 +1,43 @@
+\hypertarget{_analog_button_capture_8cpp}{}\doxysection{C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/\#Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+E32-\/20\+C9/\+Analog\+Button\+Capture.cpp File Reference}
+\label{_analog_button_capture_8cpp}\index{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/AnalogButtonCapture.cpp@{C:/Users/TGIT-\/TECH/Documents/\#Projects/Tode-\/RC/firmware/Tode-\/E32-\/20C9/AnalogButtonCapture.cpp}}
+
+
+ref.\+h  
+
+
+{\ttfamily \#include \char`\"{}Analog\+Button\+Capture.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_afd1430f280a1094302cf9fe74b6cd4df}\label{_analog_button_capture_8cpp_afd1430f280a1094302cf9fe74b6cd4df}} 
+void {\bfseries Button\+I\+S\+R\+::\+Enable\+Interrupt} ()
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_a1b946fe6b876f3f366040311a84ad7a4}\label{_analog_button_capture_8cpp_a1b946fe6b876f3f366040311a84ad7a4}} 
+{\bfseries Button\+I\+S\+R\+::\+I\+SR} (P\+C\+I\+N\+T2\+\_\+vect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_a5f31e561022b01b8336a6d1a8b0a1f81}\label{_analog_button_capture_8cpp_a5f31e561022b01b8336a6d1a8b0a1f81}} 
+int {\bfseries Button\+I\+S\+R\+::i\+Button\+Pin} = 0
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_aabc57388ad3d9147c84440a7753b5b4e}\label{_analog_button_capture_8cpp_aabc57388ad3d9147c84440a7753b5b4e}} 
+unsigned long {\bfseries Button\+I\+S\+R\+::\+Debounce} = 150
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_a4084eee254ea4719bec016cfc76ad6c7}\label{_analog_button_capture_8cpp_a4084eee254ea4719bec016cfc76ad6c7}} 
+volatile int {\bfseries Button\+I\+S\+R\+::\+Button\+Buffer} = K\+E\+Y\+N\+O\+NE
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_a8476bf0651f4c80a924537608d5937ee}\label{_analog_button_capture_8cpp_a8476bf0651f4c80a924537608d5937ee}} 
+volatile int {\bfseries Button\+I\+S\+R\+::\+Current\+\_\+\+Button} = K\+E\+Y\+N\+O\+NE
+\item 
+\mbox{\Hypertarget{_analog_button_capture_8cpp_a43cd36954cb685c980917de4e40adece}\label{_analog_button_capture_8cpp_a43cd36954cb685c980917de4e40adece}} 
+volatile unsigned long {\bfseries Button\+I\+S\+R\+::\+Button\+\_\+\+Press\+\_\+\+Time} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ref.\+h 
+
+\begin{DoxyAuthor}{Authors}
+T\+Git-\/\+Tech 9/2018 Original 
+\end{DoxyAuthor}

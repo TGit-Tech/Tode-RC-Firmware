@@ -1,0 +1,76 @@
+\hypertarget{class_tx_packet}{}\doxysection{Tx\+Packet Class Reference}
+\label{class_tx_packet}\index{TxPacket@{TxPacket}}
+
+
+Transmission Byte Protocol for R\+F-\/\+Radio.  
+
+
+
+
+{\ttfamily \#include $<$R\+F\+C.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tx_packet_a60e947cbb1a138fe8f3e4e5288e1abb6}\label{class_tx_packet_a60e947cbb1a138fe8f3e4e5288e1abb6}} 
+{\bfseries Tx\+Packet} (byte \+\_\+\+Sec\+Net, byte \+\_\+\+Type, int \+\_\+\+To\+RF, byte \+\_\+\+Ver=\mbox{\hyperlink{_r_f_c_8h_a2750a00190636997d66cf567af774f97}{B\+N\+O\+NE}}, byte \+\_\+\+Dev\+R\+F\+ID=\mbox{\hyperlink{_r_f_c_8h_a2750a00190636997d66cf567af774f97}{B\+N\+O\+NE}}, int \+\_\+\+Value=\mbox{\hyperlink{_r_f_c_8h_aff5dcc280bf801e02fef48f71f2a3af0}{I\+N\+O\+NE}})
+\item 
+\mbox{\Hypertarget{class_tx_packet_a70b38b7fe15f8fd9fa6c86eb98a4966d}\label{class_tx_packet_a70b38b7fe15f8fd9fa6c86eb98a4966d}} 
+void {\bfseries Tx\+Byte} (byte \+\_\+\+Byte)
+\item 
+\mbox{\Hypertarget{class_tx_packet_a5ba2b6cde0e63502aff9cf5988296f74}\label{class_tx_packet_a5ba2b6cde0e63502aff9cf5988296f74}} 
+int {\bfseries Secure} ()
+\item 
+\mbox{\Hypertarget{class_tx_packet_acd5cf05e1974cf5c39aefc755c8feed5}\label{class_tx_packet_acd5cf05e1974cf5c39aefc755c8feed5}} 
+void {\bfseries Add\+Tode\+Config} (int \+\_\+\+E\+E\+Address)
+\item 
+\mbox{\Hypertarget{class_tx_packet_a0a455516a4d54cc4d7c388189d656e1d}\label{class_tx_packet_a0a455516a4d54cc4d7c388189d656e1d}} 
+void {\bfseries Add\+Value} (byte \+\_\+\+R\+F\+ID, int \+\_\+\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tx_packet_a572d38d3bab1776af2ed9bd1afefa3bc}\label{class_tx_packet_a572d38d3bab1776af2ed9bd1afefa3bc}} 
+int {\bfseries Size} = 0
+\item 
+\mbox{\Hypertarget{class_tx_packet_ab8bc33550dab583a01b7f6bbec32d403}\label{class_tx_packet_ab8bc33550dab583a01b7f6bbec32d403}} 
+Arduino\+Queue$<$ byte $>$ $\ast$ {\bfseries Extra\+Bytes} = 0
+\item 
+byte {\bfseries Bytes} \mbox{[}58\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Transmission Byte Protocol for R\+F-\/\+Radio. 
+
+Definition at line 98 of file R\+F\+C.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tx_packet_a1b7b16d2d335c2b14f7fd6a37458bdf1}\label{class_tx_packet_a1b7b16d2d335c2b14f7fd6a37458bdf1}} 
+\index{TxPacket@{TxPacket}!Bytes@{Bytes}}
+\index{Bytes@{Bytes}!TxPacket@{TxPacket}}
+\doxysubsubsection{\texorpdfstring{Bytes}{Bytes}}
+{\footnotesize\ttfamily byte Tx\+Packet\+::\+Bytes\mbox{[}58\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255,255,255,}
+\DoxyCodeLine{                         255,255,255,255,255,255,255,255\}}
+
+\end{DoxyCode}
+
+
+Definition at line 110 of file R\+F\+C.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_r_f_c_8h}{R\+F\+C.\+h}}\item 
+C\+:/\+Users/\+T\+G\+I\+T-\/\+T\+E\+C\+H/\+Documents/!\+Projects/\+Tode-\/\+R\+C/firmware/\+Tode-\/\+R\+C-\/211\+U/\mbox{\hyperlink{_r_f_c_8cpp}{R\+F\+C.\+cpp}}\end{DoxyCompactItemize}
