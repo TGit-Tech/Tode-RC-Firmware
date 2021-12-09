@@ -20,7 +20,7 @@
 
 #include "LHdw.h"
 #include "iRF.h"
-#define FIRMWARE      "Reset21BH"
+#define FIRMWARE      "Reset21C9"
 
 /**********************************************************************************************//**
  *  @class  Sys
