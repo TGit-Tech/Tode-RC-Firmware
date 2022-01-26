@@ -1,5 +1,5 @@
 /******************************************************************************************************************//**
- * @file      Tode-RC-21C9.ino
+ * @file      Tode-RC-221N.ino
  * @brief     Arduino Sketch for the Tode-RC System Implementing Ebyte E32 Transceiver.
  * @details   Main Sketch
  * @version   21BH [YYMD]
@@ -28,8 +28,7 @@ void setup() {
   */
   pinMode(45, OUTPUT);          // ** For Pump VFD Speed Set **
   pinMode(48, OUTPUT);          
-  //digitalWrite(48, HIGH);       // Turn on Display Backlight
-  digitalWrite(48, LOW);       // Turn on Display Backlight
+  digitalWrite(48, HIGH);       // Turn on Display Backlight
     
 #if DEBUGLEVEL>0
   Serial.begin(115200);           // This has a funny way of blanking the display (Comment out to check)
