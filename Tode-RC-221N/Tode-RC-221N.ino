@@ -12,6 +12,8 @@
 #include "lib/ABC.h"
 #include "lib/ABC.cpp"
 #include "Sys.h"
+//#define DISPLIGHTACTIVE HIGH
+#define DISPLIGHTACTIVE LOW
 
 AnalogButtonCapture* ButtonCapture = 0;
 Sys* System=0;
@@ -28,7 +30,7 @@ void setup() {
   */
   pinMode(45, OUTPUT);          // ** For Pump VFD Speed Set **
   pinMode(48, OUTPUT);          
-  digitalWrite(48, HIGH);       // Turn on Display Backlight
+  digitalWrite(48, DISPLIGHTACTIVE);       // Turn on Display Backlight
     
 #if DEBUGLEVEL>0
   Serial.begin(115200);           // This has a funny way of blanking the display (Comment out to check)
