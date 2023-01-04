@@ -4,5 +4,8 @@
 
 221N Local Device Polling, Pressure & Distance working
 
-2314 OnOff, Analog Input, Sonic Distance working well
-	 - release candidate; memory saves & well functioning.
+2314 Release Candidate ( works well )
+	- OnOff Device
+	- Analog Input Devices with configured mathematics
+	- Sonic Distance Sensor with Trig Echo Pins
+	- Start/Stop 3-Wire Device
