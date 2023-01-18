@@ -9,3 +9,8 @@
 * Analog Input Devices with configured mathematics
 * Sonic Distance Sensor with Trig Echo Pins
 * Start/Stop 3-Wire Device
+
+### 231H User Test (works)
+* Added Device Control Logic (DCL)
+* Input now can control output via Setpoint or Math
+* Todes and Devices are Numbered for the DCL selection
