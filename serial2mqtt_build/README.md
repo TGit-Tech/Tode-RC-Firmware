@@ -8,7 +8,7 @@ protocol set to 'jsonObject'.
 
 deploy the pre-build versions from the Debug directory , 2 versions available : Linux 64bits Intel and Raspberry Pi ARM. The armv6l also runs on raspberry pi 3. Watch out for the arch command below.
 
-wget https://github.com/TGit-Tech/Tode-RC-Firmware/tree/main/serial2mqtt_build/serial2mqtt.`arch`.zip
-wget https://github.com/TGit-Tech/Tode-RC-Firmware/tree/main/serial2mqtt_build/serial2mqtt.json
-unzip serial2mqtt.`arch`.zip
-mv Debug/serial2mqtt.`arch` serial2mqtt
+- wget https://raw.githubusercontent.com/TGit-Tech/Tode-RC-Firmware/main/serial2mqtt_build/serial2mqtt.`arch`.zip
+- wget https://raw.githubusercontent.com/TGit-Tech/Tode-RC-Firmware/main/serial2mqtt_build/serial2mqtt.json
+- unzip serial2mqtt.`arch`.zip
+- mv Debug/serial2mqtt.`arch` serial2mqtt
