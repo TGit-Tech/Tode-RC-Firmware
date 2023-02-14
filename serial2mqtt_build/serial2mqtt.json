@@ -8,6 +8,7 @@
             "/dev/ttyUSB0"
         ],
         "protocol": "jsonObject",
+		"reconnectInterval": 20000,
 		"idleTimeout": 20000
     },
     "log": {
