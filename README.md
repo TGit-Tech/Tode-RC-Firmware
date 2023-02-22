@@ -14,3 +14,7 @@
 * Added Device Control Logic (DCL)
 * Input now can control output via Setpoint or Math
 * Todes and Devices are Numbered for the DCL selection
+
+### 232H MQTT Support (works)
+* Added homie MQTT control support
+* System Submenu for resets and KB by Serial Control
