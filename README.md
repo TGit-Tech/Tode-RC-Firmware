@@ -18,3 +18,6 @@
 ### 232H MQTT Support (works)
 * Added homie MQTT control support
 * System Submenu for resets and KB by Serial Control
+
+### 241E Multi-Model Support
+* Please set Radio and Tode-RC hardware model in config.h
