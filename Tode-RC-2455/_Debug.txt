@@ -1,0 +1,5 @@
+--- DEBUG ------
+New Unit on first Add Relay
+Keypad went dead but changed to Debug-10 and worked fine.
+Went back to Debug-0 still works fine.
+
